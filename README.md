@@ -50,8 +50,11 @@ erDiagram
 
     DEVICE ||--o| TEMPERATURE_READINGS : has
     STATUS ||--o| TEMPERATURE_READINGS : has
+```
+
 
 #### Kaggle
+
 Для того, чтобы получить доступ к скачиванию в kaggle, необходимо получить API-токен и вставить внутрь файла
 /etl_02/airflow_dockerfile/kaggle/kaggle.json
 

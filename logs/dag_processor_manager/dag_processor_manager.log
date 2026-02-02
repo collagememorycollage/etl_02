@@ -11109,3 +11109,69 @@ File Path                             PID    Runtime      # DAGs    # Errors  La
 /opt/airflow/dags/load_postgresql.py                           1           0  0.35s           2026-02-02T17:42:17                      12
 /opt/airflow/dags/download_iot.py                              1           0  0.15s           2026-02-02T17:42:17                      12
 ================================================================================
+[2026-02-02T17:42:52.398+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:42:52.399+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:42:57.417+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:42:57.418+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:43:02.437+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:43:02.438+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:43:07.459+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:43:07.460+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:43:12.477+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:43:12.478+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:43:17.498+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:43:17.499+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:43:17.503+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/parse_iot.py                                 1           0  0.35s           2026-02-02T17:42:48                      12
+/opt/airflow/dags/load_postgresql.py                           1           0  0.31s           2026-02-02T17:42:48                      12
+/opt/airflow/dags/download_iot.py                              1           0  0.13s           2026-02-02T17:42:48                      12
+================================================================================
+[2026-02-02T17:43:22.880+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:43:22.881+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:43:27.901+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:43:27.902+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:43:32.921+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:43:32.922+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:43:37.942+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:43:37.942+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:43:42.963+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:43:42.964+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:43:47.983+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:43:47.984+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:43:47.988+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/parse_iot.py                                 1           0  0.36s           2026-02-02T17:43:18                      12
+/opt/airflow/dags/load_postgresql.py                           1           0  0.31s           2026-02-02T17:43:18                      12
+/opt/airflow/dags/download_iot.py                              1           0  0.21s           2026-02-02T17:43:19                      12
+================================================================================
+[2026-02-02T17:43:53.369+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:43:53.370+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:43:58.388+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:43:58.389+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:44:03.407+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:44:03.408+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:44:08.428+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:44:08.429+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:44:13.455+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:44:13.456+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:44:18.480+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2026-02-02T17:44:18.483+0000] {manager.py:824} INFO - There are 3 files in /opt/airflow/dags
+[2026-02-02T17:44:18.492+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/parse_iot.py                                 1           0  0.36s           2026-02-02T17:43:49                      12
+/opt/airflow/dags/load_postgresql.py                           1           0  0.30s           2026-02-02T17:43:49                      12
+/opt/airflow/dags/download_iot.py                              1           0  0.13s           2026-02-02T17:43:49                      12
+================================================================================
