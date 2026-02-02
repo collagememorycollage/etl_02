@@ -13,11 +13,10 @@ from airflow.operators.python import PythonOperator
 from airflow.sensors.external_task import ExternalTaskSensor
 import os
 import json
+
 # Конфигурация DAG
 OWNER = "a.sorokin"
 DAG_ID = "download_iot"
-
-
 
 
 SHORT_DESCRIPTION = "Скачивание данных c Iot-устройств"
@@ -29,7 +28,7 @@ args = {
     "owner": OWNER,
     "start_date": pendulum.datetime(year=2026, month=1, day=30),
     "retries": 3,
-    "depends_on_past": True
+    "depends_on_past": False
 }
 
 with DAG(
@@ -76,7 +75,3 @@ with DAG(
     )
 
 start >> download_data >> end
-
-
-
-
