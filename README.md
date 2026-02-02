@@ -20,35 +20,27 @@ https://www.kaggle.com/datasets/atulanandjha/temperature-readings-iot-devices
 | __export__.temp_log_196128_be0919cf     | Room Admin   | 08-12-2018 09:29   | 41   | Out    |
 | __export__.temp_log_196126_d30b72fb     | Room Admin   | 08-12-2018 09:29   | 31   | In     |
 | __export__.temp_log_196125_b0fa0b41     | Room Admin   | 08-12-2018 09:29   | 31   | In     |
-| __export__.temp_log_196121_01544d45     | Room Admin   | 08-12-2018 09:28   | 29   | In     |
-| __export__.temp_log_196122_f8b80a9f     | Room Admin   | 08-12-2018 09:28   | 29   | In     |
-| __export__.temp_log_196111_6b7a0848     | Room Admin   | 08-12-2018 09:26   | 29   | In     |
-| __export__.temp_log_196112_e134aebd     | Room Admin   | 08-12-2018 09:26   | 29   | In     |
-| __export__.temp_log_196108_4a983c7e     | Room Admin   | 08-12-2018 09:25   | 42   | Out    |
-| __export__.temp_log_196108_4a983c7e     | Room Admin   | 08-12-2018 09:25   | 42   | Out    |
-| __export__.temp_log_196101_d5ec7633     | Room Admin   | 08-12-2018 09:24   | 29   | In     |
-| __export__.temp_log_196099_3b8ef67b     | Room Admin   | 08-12-2018 09:24   | 29   | In     |
-| __export__.temp_log_196095_788b2c27     | Room Admin   | 08-12-2018 09:22   | 29   | In     |
-| __export__.temp_log_196096_eafb59b6     | Room Admin   | 08-12-2018 09:22   | 29   | In     |
 
 Используя Airflow, выгрузим наши данные на локальный компьютер и проведем первичный анализ.
 
 После того как наши данные будут преобразованы, спроектируем схему звезда и переместим их в PostgreSQL.
 
  
-# IoT Temperature Monitoring Schema
+#### IoT Temperature Monitoring Schema
+
+Внутри файла /etl_02/postgres_dockerfile/create_db.sql лежит скрипт для разворачивания схемы.
 
 ```mermaid
 erDiagram
-    DEVICE {
+    device {
         int device_id PK
         string device_name
     }
-    STATUS {
+    status {
         int status_id PK
         string status_name
     }
-    TEMPERATURE_READINGS {
+    temperature_readings {
         int reading_id PK
         int device_id FK
         int status_id FK
@@ -58,4 +50,31 @@ erDiagram
 
     DEVICE ||--o| TEMPERATURE_READINGS : has
     STATUS ||--o| TEMPERATURE_READINGS : has
+
+#### Kaggle
+Для того, чтобы получить доступ к скачиванию в kaggle, необходимо получить API-токен и вставить внутрь файла
+/etl_02/airflow_dockerfile/kaggle/kaggle.json
+
+Данный файл имеет следующую структуру:
+
+```
+{
+  "username": "nick_name",
+  "key": "your_api_key"
+}
+```
+
+#### Airflow
+Внутри процесса скачивания имеется 2 DAG'a, один из них скачивает информацию о IOT устройствах, а другой проводит очистку информации,приведению информации к нужным типам, вывод небольшой 
+статистики по температуре и подготовку данных к загрузке в PostgreSQL. 
+
+DAG'и имеют следующую структуру: 
+
+[img_1]
+
+[img_2]
+
+
+
+
 

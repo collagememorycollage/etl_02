@@ -1,0 +1,118 @@
+[2026-02-02T16:48:07.189+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T16:48:07.205+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.log_info scheduled__2026-02-01T10:00:00+00:00 [queued]>
+[2026-02-02T16:48:07.212+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.log_info scheduled__2026-02-01T10:00:00+00:00 [queued]>
+[2026-02-02T16:48:07.212+0000] {taskinstance.py:2867} INFO - Starting attempt 8 of 11
+[2026-02-02T16:48:07.218+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): log_info> on 2026-02-01 10:00:00+00:00
+[2026-02-02T16:48:07.223+0000] {standard_task_runner.py:72} INFO - Started process 813 to run task
+[2026-02-02T16:48:07.225+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'log_info', 'scheduled__2026-02-01T10:00:00+00:00', '--job-id', '229', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpqqey14xk']
+[2026-02-02T16:48:07.227+0000] {standard_task_runner.py:105} INFO - Job 229: Subtask log_info
+[2026-02-02T16:48:07.235+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T16:48:07.257+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.log_info scheduled__2026-02-01T10:00:00+00:00 [running]> on host 62d0328142ca
+[2026-02-02T16:48:07.258+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-02T16:48:07.308+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='log_info' AIRFLOW_CTX_EXECUTION_DATE='2026-02-01T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='8' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-01T10:00:00+00:00'
+[2026-02-02T16:48:07.308+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T16:48:07.379+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/parse_iot.py", line 102, in log_info
+    output += top5
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/arraylike.py", line 190, in __radd__
+    return self._arith_method(other, roperator.radd)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/frame.py", line 7644, in _arith_method
+    new_data = self._dispatch_frame_op(other, op, axis=axis)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/frame.py", line 7676, in _dispatch_frame_op
+    bm = self._mgr.apply(array_op, right=right)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/internals/managers.py", line 352, in apply
+    applied = b.apply(f, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/internals/blocks.py", line 366, in apply
+    result = func(self.values, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/ops/array_ops.py", line 285, in arithmetic_op
+    res_values = _na_arithmetic_op(left, right, op)  # type: ignore[arg-type]
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/ops/array_ops.py", line 220, in _na_arithmetic_op
+    result = func(left, right)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/roperator.py", line 11, in radd
+    return right + left
+numpy.core._exceptions._UFuncNoLoopError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U187'), dtype('int64')) -> None
+[2026-02-02T16:48:07.393+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=parse_iot, task_id=log_info, run_id=scheduled__2026-02-01T10:00:00+00:00, execution_date=20260201T100000, start_date=20260202T164807, end_date=20260202T164807
+[2026-02-02T16:48:07.411+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T16:48:07.412+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 229 for task log_info (ufunc 'add' did not contain a loop with signature matching types (dtype('<U187'), dtype('int64')) -> None; 813)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/parse_iot.py", line 102, in log_info
+    output += top5
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/arraylike.py", line 190, in __radd__
+    return self._arith_method(other, roperator.radd)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/frame.py", line 7644, in _arith_method
+    new_data = self._dispatch_frame_op(other, op, axis=axis)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/frame.py", line 7676, in _dispatch_frame_op
+    bm = self._mgr.apply(array_op, right=right)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/internals/managers.py", line 352, in apply
+    applied = b.apply(f, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/internals/blocks.py", line 366, in apply
+    result = func(self.values, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/ops/array_ops.py", line 285, in arithmetic_op
+    res_values = _na_arithmetic_op(left, right, op)  # type: ignore[arg-type]
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/ops/array_ops.py", line 220, in _na_arithmetic_op
+    result = func(left, right)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/roperator.py", line 11, in radd
+    return right + left
+numpy.core._exceptions._UFuncNoLoopError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U187'), dtype('int64')) -> None
+[2026-02-02T16:48:07.437+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2026-02-02T16:48:07.456+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T16:48:07.457+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

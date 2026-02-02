@@ -1,0 +1,6 @@
+apache-airflow-providers-postgres
+pandas
+requests==2.31.0
+psycopg2-binary
+kagglehub[pandas-datasets]
+kaggle

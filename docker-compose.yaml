@@ -1,0 +1,143 @@
+x-airflow-common: &airflow-common
+  build:
+    context: ./airflow_dockerfile
+    dockerfile: Dockerfile
+  user: "${AIRFLOW_UID}:${AIRFLOW_GID}"
+  env_file:
+    - .env
+  environment:
+    AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+    AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+    AIRFLOW__CELERY__BROKER_URL: redis://redis:6379/0
+    AIRFLOW__CORE__FERNET_KEY: ${FERNET_KEY}
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: 5
+    _AIRFLOW_DB_MIGRATE: 'true'
+    _AIRFLOW_WWW_USER_CREATE: 'true'
+    _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME}
+    _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD}
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./plugins:/opt/airflow/plugins
+    - ./scripts:/opt/airflow/scripts
+    - ./data:/opt/airflow/data
+  depends_on:
+    postgres:
+      condition: service_healthy
+  networks:
+    - all_in_one
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    command: ["postgres", "-c", "wal_level=logical"]
+    ports:
+      - "5432:5432"
+    restart: always
+    volumes:
+      - ./postgres-db-volume:/var/lib/postgresql/data
+      - ./src/init_db:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "airflow" ]
+      interval: 5s
+      retries: 5
+    networks:
+      - all_in_one
+
+
+  postgres_storage_db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: ${POSTGRES_STORAGE_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_STORAGE_PASSWORD}
+      POSTGRES_BD: ${POSTGRES_STORAGE_DB}
+    command: ["postgres", "-c", "wal_level=logical"]
+    ports:
+      - "5400:5432"
+    restart: always
+    volumes:
+      - ./postgres-storage-db-volume:/var/lib/postgresql/data
+      - ./postgres_dockerfile/create_db.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "postgres" ]
+      interval: 5s
+      retries: 5
+    networks:
+      - all_in_one
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - all_in_one
+
+
+  af-webserver:
+    <<: *airflow-common
+    container_name: af-webserver
+    command: webserver
+    ports:
+      - "8080:8080"
+    restart: always
+
+  af-scheduler:
+    <<: *airflow-common
+    container_name: af-scheduler
+    command: scheduler
+    restart: always
+
+  af-worker:
+    <<: *airflow-common
+    container_name: af-worker
+    command: celery worker
+    ports:
+      - "4041:4041"
+    restart: always
+
+  airflow-init:
+    <<: *airflow-common
+    container_name: airflow-init
+    command:
+      - bash
+      - -c
+      - |
+          echo "Airflow version"
+          airflow version
+
+          airflow connections add 'backend_db' \
+            --conn-type 'postgres' \
+            --conn-host 'postgres' \
+            --conn-login "${POSTGRES_USER}" \
+            --conn-password "${POSTGRES_PASSWORD}" \
+            --conn-schema 'backend' \
+            --conn-port 5432
+        
+          airflow connections add 'metadata_db' \
+            --conn-type 'postgres' \
+            --conn-host 'postgres' \
+            --conn-login "${POSTGRES_USER}" \
+            --conn-password "${POSTGRES_PASSWORD}" \
+            --conn-schema 'metadata' \
+            --conn-port 5432
+
+          airflow connections add 'my_postgres' \
+            --conn-type 'postgres' \
+            --conn-host 'postgres' \
+            --conn-login 'postgres' \
+            --conn-password 'postgres' \
+            --conn-port 5400 
+
+volumes:
+  postgres-db-volume:
+
+networks:
+  all_in_one:
+    driver: bridge

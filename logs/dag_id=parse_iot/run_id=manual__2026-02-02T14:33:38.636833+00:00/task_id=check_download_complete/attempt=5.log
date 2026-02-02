@@ -1,0 +1,599 @@
+[2026-02-02T17:05:42.815+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:05:42.831+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:05:42.837+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:05:42.837+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:05:42.844+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:05:42.849+0000] {standard_task_runner.py:72} INFO - Started process 916 to run task
+[2026-02-02T17:05:42.851+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '254', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpvlth4od5']
+[2026-02-02T17:05:42.852+0000] {standard_task_runner.py:105} INFO - Job 254: Subtask check_download_complete
+[2026-02-02T17:05:42.861+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:05:42.881+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:05:42.928+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:05:42.928+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:05:42.935+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:05:42.941+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:05:42.941+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:05:42.958+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:05:42.958+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:05:42.983+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:05:43.010+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:05:43.011+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:06:44.414+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:06:44.429+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:06:44.436+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:06:44.436+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:06:44.442+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:06:44.447+0000] {standard_task_runner.py:72} INFO - Started process 920 to run task
+[2026-02-02T17:06:44.449+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '255', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmp9bjh6ew7']
+[2026-02-02T17:06:44.451+0000] {standard_task_runner.py:105} INFO - Job 255: Subtask check_download_complete
+[2026-02-02T17:06:44.459+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:06:44.478+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:06:44.530+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:06:44.531+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:06:44.537+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:06:44.543+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:06:44.543+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:06:44.559+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:06:44.560+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:06:44.581+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:06:44.606+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:06:44.607+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:07:45.608+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:07:45.625+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:07:45.633+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:07:45.633+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:07:45.641+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:07:45.645+0000] {standard_task_runner.py:72} INFO - Started process 924 to run task
+[2026-02-02T17:07:45.648+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '256', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmp_zu5uo1b']
+[2026-02-02T17:07:45.649+0000] {standard_task_runner.py:105} INFO - Job 256: Subtask check_download_complete
+[2026-02-02T17:07:45.657+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:07:45.676+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:07:45.722+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:07:45.723+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:07:45.729+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:07:45.736+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:07:45.736+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:07:45.752+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:07:45.752+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:07:45.779+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:07:45.804+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:07:45.805+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:08:46.846+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:08:46.862+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:08:46.868+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:08:46.868+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:08:46.875+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:08:46.879+0000] {standard_task_runner.py:72} INFO - Started process 928 to run task
+[2026-02-02T17:08:46.881+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '257', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpm2jscp1r']
+[2026-02-02T17:08:46.882+0000] {standard_task_runner.py:105} INFO - Job 257: Subtask check_download_complete
+[2026-02-02T17:08:46.891+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:08:46.910+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:08:46.959+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:08:46.960+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:08:46.967+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:08:46.973+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:08:46.973+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:08:46.994+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:08:46.994+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:08:47.013+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:08:47.038+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:08:47.039+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:09:48.033+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:09:48.047+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:09:48.053+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:09:48.054+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:09:48.060+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:09:48.064+0000] {standard_task_runner.py:72} INFO - Started process 932 to run task
+[2026-02-02T17:09:48.066+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '258', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmp1xh_zppw']
+[2026-02-02T17:09:48.067+0000] {standard_task_runner.py:105} INFO - Job 258: Subtask check_download_complete
+[2026-02-02T17:09:48.076+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:09:48.094+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:09:48.137+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:09:48.138+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:09:48.145+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:09:48.150+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:09:48.151+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:09:48.166+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:09:48.166+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:09:48.198+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:09:48.221+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:09:48.223+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:10:49.061+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:10:49.075+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:10:49.081+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:10:49.081+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:10:49.087+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:10:49.092+0000] {standard_task_runner.py:72} INFO - Started process 936 to run task
+[2026-02-02T17:10:49.094+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '259', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpd8cfqgi_']
+[2026-02-02T17:10:49.095+0000] {standard_task_runner.py:105} INFO - Job 259: Subtask check_download_complete
+[2026-02-02T17:10:49.103+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:10:49.122+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:10:49.165+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:10:49.165+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:10:49.172+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:10:49.177+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:10:49.178+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:10:49.193+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:10:49.193+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:10:49.226+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:10:49.249+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:10:49.250+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:11:49.933+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:11:49.947+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:11:49.953+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:11:49.953+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:11:49.959+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:11:49.963+0000] {standard_task_runner.py:72} INFO - Started process 940 to run task
+[2026-02-02T17:11:49.965+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '260', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpc0iunutb']
+[2026-02-02T17:11:49.967+0000] {standard_task_runner.py:105} INFO - Job 260: Subtask check_download_complete
+[2026-02-02T17:11:49.975+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:11:49.993+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:11:50.036+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:11:50.037+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:11:50.043+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:11:50.049+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:11:50.049+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:11:50.064+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:11:50.064+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:11:50.097+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:11:50.120+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:11:50.122+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:12:51.513+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:12:51.527+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:12:51.533+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:12:51.533+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:12:51.540+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:12:51.544+0000] {standard_task_runner.py:72} INFO - Started process 944 to run task
+[2026-02-02T17:12:51.546+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '261', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpc63e0cq4']
+[2026-02-02T17:12:51.547+0000] {standard_task_runner.py:105} INFO - Job 261: Subtask check_download_complete
+[2026-02-02T17:12:51.556+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:12:51.574+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:12:51.618+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:12:51.618+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:12:51.625+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:12:51.631+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:12:51.631+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:12:51.647+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:12:51.647+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:12:51.678+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:12:51.701+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:12:51.702+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:13:52.477+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:13:52.492+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:13:52.497+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:13:52.498+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:13:52.504+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:13:52.508+0000] {standard_task_runner.py:72} INFO - Started process 948 to run task
+[2026-02-02T17:13:52.510+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '262', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpa7109yon']
+[2026-02-02T17:13:52.511+0000] {standard_task_runner.py:105} INFO - Job 262: Subtask check_download_complete
+[2026-02-02T17:13:52.519+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:13:52.538+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:13:52.581+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:13:52.582+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:13:52.589+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:13:52.594+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:13:52.595+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:13:52.609+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:13:52.610+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:13:52.642+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:13:52.665+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:13:52.666+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:14:53.727+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:14:53.744+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:14:53.751+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:14:53.751+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:14:53.757+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:14:53.761+0000] {standard_task_runner.py:72} INFO - Started process 952 to run task
+[2026-02-02T17:14:53.763+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '263', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpy_jw4ok0']
+[2026-02-02T17:14:53.765+0000] {standard_task_runner.py:105} INFO - Job 263: Subtask check_download_complete
+[2026-02-02T17:14:53.773+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:14:53.794+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:14:53.844+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:14:53.845+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:14:53.852+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:14:53.859+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:14:53.859+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:14:53.882+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:14:53.882+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:14:53.895+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:14:53.923+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:14:53.924+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:15:54.787+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:15:54.802+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:15:54.808+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:15:54.809+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:15:54.815+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:15:54.819+0000] {standard_task_runner.py:72} INFO - Started process 956 to run task
+[2026-02-02T17:15:54.821+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '264', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpis7m0qrm']
+[2026-02-02T17:15:54.823+0000] {standard_task_runner.py:105} INFO - Job 264: Subtask check_download_complete
+[2026-02-02T17:15:54.831+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:15:54.850+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:15:54.896+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:15:54.897+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:15:54.904+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:15:54.909+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:15:54.910+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:15:54.926+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:15:54.926+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:15:54.953+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:15:54.978+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:15:54.978+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:16:55.861+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:16:55.876+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:16:55.883+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:16:55.883+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:16:55.890+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:16:55.894+0000] {standard_task_runner.py:72} INFO - Started process 960 to run task
+[2026-02-02T17:16:55.896+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '265', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmp4zknjqmk']
+[2026-02-02T17:16:55.897+0000] {standard_task_runner.py:105} INFO - Job 265: Subtask check_download_complete
+[2026-02-02T17:16:55.905+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:16:55.925+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:16:55.970+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:16:55.971+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:16:55.978+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:16:55.984+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:16:55.984+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:16:56.005+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:16:56.005+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:16:56.028+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:16:56.052+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:16:56.053+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:17:56.925+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:17:56.940+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:17:56.947+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:17:56.947+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:17:56.954+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:17:56.957+0000] {standard_task_runner.py:72} INFO - Started process 964 to run task
+[2026-02-02T17:17:56.959+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '266', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpv6q0c0_n']
+[2026-02-02T17:17:56.961+0000] {standard_task_runner.py:105} INFO - Job 266: Subtask check_download_complete
+[2026-02-02T17:17:56.969+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:17:56.989+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:17:57.034+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:17:57.035+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:17:57.042+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:17:57.048+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:17:57.048+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:17:57.064+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:17:57.065+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:17:57.091+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:17:57.116+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:17:57.117+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:18:58.033+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:18:58.049+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:18:58.055+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:18:58.055+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:18:58.061+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:18:58.065+0000] {standard_task_runner.py:72} INFO - Started process 968 to run task
+[2026-02-02T17:18:58.067+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '267', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpgmckrpuu']
+[2026-02-02T17:18:58.069+0000] {standard_task_runner.py:105} INFO - Job 267: Subtask check_download_complete
+[2026-02-02T17:18:58.077+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:18:58.097+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:18:58.144+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:18:58.144+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:18:58.151+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:18:58.157+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:18:58.158+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:18:58.174+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:18:58.174+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:18:58.199+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:18:58.206+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:19:59.107+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:19:59.122+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:19:59.128+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:19:59.128+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:19:59.135+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:19:59.139+0000] {standard_task_runner.py:72} INFO - Started process 972 to run task
+[2026-02-02T17:19:59.141+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '268', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmplv3b5mkm']
+[2026-02-02T17:19:59.142+0000] {standard_task_runner.py:105} INFO - Job 268: Subtask check_download_complete
+[2026-02-02T17:19:59.151+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:19:59.170+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:19:59.216+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:19:59.216+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:19:59.224+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:19:59.230+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:19:59.230+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:19:59.246+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:19:59.246+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:19:59.273+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:19:59.298+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:19:59.299+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:21:00.796+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:21:00.812+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:21:00.818+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:21:00.819+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:21:00.825+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:21:00.829+0000] {standard_task_runner.py:72} INFO - Started process 976 to run task
+[2026-02-02T17:21:00.831+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '269', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpdwy68aj7']
+[2026-02-02T17:21:00.832+0000] {standard_task_runner.py:105} INFO - Job 269: Subtask check_download_complete
+[2026-02-02T17:21:00.841+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:21:00.860+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:21:00.907+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:21:00.907+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:21:00.915+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:21:00.921+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:21:00.921+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:21:00.938+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:21:00.938+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:21:00.963+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:21:00.987+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:21:00.988+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:22:01.952+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:22:01.969+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:22:01.975+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:22:01.975+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:22:01.982+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:22:01.986+0000] {standard_task_runner.py:72} INFO - Started process 980 to run task
+[2026-02-02T17:22:01.988+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '270', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmp1levownz']
+[2026-02-02T17:22:01.989+0000] {standard_task_runner.py:105} INFO - Job 270: Subtask check_download_complete
+[2026-02-02T17:22:01.998+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:22:02.019+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 62d0328142ca
+[2026-02-02T17:22:02.074+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:22:02.075+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:22:02.082+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:22:02.088+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:22:02.088+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:22:02.109+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:22:02.110+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:22:02.120+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:22:02.146+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:22:02.147+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:35:14.650+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:35:14.669+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:35:14.677+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:35:14.677+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:35:14.686+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:35:14.691+0000] {standard_task_runner.py:72} INFO - Started process 75 to run task
+[2026-02-02T17:35:14.693+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '272', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmppj6adza1']
+[2026-02-02T17:35:14.694+0000] {standard_task_runner.py:105} INFO - Job 272: Subtask check_download_complete
+[2026-02-02T17:35:14.703+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:35:14.725+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 24f3c6cc0f5a
+[2026-02-02T17:35:14.779+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:35:14.779+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:35:14.799+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:35:14.805+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:35:14.805+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:35:14.826+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:35:14.826+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:35:14.865+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:35:14.892+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:35:14.893+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:36:15.804+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:36:15.831+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:36:15.837+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:36:15.837+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:36:15.843+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:36:15.847+0000] {standard_task_runner.py:72} INFO - Started process 79 to run task
+[2026-02-02T17:36:15.849+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '273', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmp12ybkyvx']
+[2026-02-02T17:36:15.851+0000] {standard_task_runner.py:105} INFO - Job 273: Subtask check_download_complete
+[2026-02-02T17:36:15.859+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:36:15.878+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 24f3c6cc0f5a
+[2026-02-02T17:36:15.931+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:36:15.931+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:36:15.938+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:36:15.943+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:36:15.943+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:36:15.959+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:36:15.959+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:36:15.981+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:36:16.004+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:36:16.005+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:37:17.379+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:37:17.395+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:37:17.400+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:37:17.400+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:37:17.406+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:37:17.411+0000] {standard_task_runner.py:72} INFO - Started process 83 to run task
+[2026-02-02T17:37:17.413+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '274', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpd6uninp8']
+[2026-02-02T17:37:17.414+0000] {standard_task_runner.py:105} INFO - Job 274: Subtask check_download_complete
+[2026-02-02T17:37:17.423+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:37:17.441+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 24f3c6cc0f5a
+[2026-02-02T17:37:17.486+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:37:17.486+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:37:17.493+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:37:17.498+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:37:17.499+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:37:17.514+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:37:17.514+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:37:17.545+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:37:17.569+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:37:17.570+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:38:18.945+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:38:18.961+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:38:18.966+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:38:18.967+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:38:18.973+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:38:18.978+0000] {standard_task_runner.py:72} INFO - Started process 87 to run task
+[2026-02-02T17:38:18.980+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '275', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpk7907303']
+[2026-02-02T17:38:18.981+0000] {standard_task_runner.py:105} INFO - Job 275: Subtask check_download_complete
+[2026-02-02T17:38:18.989+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:38:19.008+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 24f3c6cc0f5a
+[2026-02-02T17:38:19.052+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:38:19.052+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:38:19.059+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:38:19.064+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:38:19.065+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:38:19.080+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:38:19.080+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:38:19.112+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:38:19.135+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:38:19.136+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:39:20.486+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:39:20.502+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:39:20.508+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:39:20.508+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:39:20.514+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:39:20.518+0000] {standard_task_runner.py:72} INFO - Started process 91 to run task
+[2026-02-02T17:39:20.520+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '276', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmp87m1z4uo']
+[2026-02-02T17:39:20.522+0000] {standard_task_runner.py:105} INFO - Job 276: Subtask check_download_complete
+[2026-02-02T17:39:20.530+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:39:20.548+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 24f3c6cc0f5a
+[2026-02-02T17:39:20.591+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:39:20.592+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:39:20.599+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:39:20.604+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:39:20.604+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:39:20.619+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:39:20.620+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:39:20.652+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:39:20.675+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:39:20.676+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:40:21.499+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:40:21.515+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:40:21.521+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:40:21.521+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:40:21.527+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:40:21.532+0000] {standard_task_runner.py:72} INFO - Started process 95 to run task
+[2026-02-02T17:40:21.534+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '277', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpo8bf_jvl']
+[2026-02-02T17:40:21.535+0000] {standard_task_runner.py:105} INFO - Job 277: Subtask check_download_complete
+[2026-02-02T17:40:21.544+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:40:21.562+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 24f3c6cc0f5a
+[2026-02-02T17:40:21.606+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:40:21.607+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:40:21.613+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:40:21.619+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:40:21.619+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:40:21.634+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:40:21.634+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:40:21.666+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:40:21.689+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:40:21.690+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:41:22.798+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:41:22.813+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:41:22.819+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:41:22.819+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:41:22.825+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:41:22.830+0000] {standard_task_runner.py:72} INFO - Started process 99 to run task
+[2026-02-02T17:41:22.832+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '278', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmp11tfeera']
+[2026-02-02T17:41:22.833+0000] {standard_task_runner.py:105} INFO - Job 278: Subtask check_download_complete
+[2026-02-02T17:41:22.841+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:41:22.864+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 24f3c6cc0f5a
+[2026-02-02T17:41:22.909+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:41:22.910+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:41:22.917+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:41:22.923+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:41:22.923+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:41:22.944+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:41:22.945+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:41:22.964+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:41:22.988+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:41:22.989+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-02T17:42:23.946+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-02T17:42:23.962+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:42:23.968+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [queued]>
+[2026-02-02T17:42:23.968+0000] {taskinstance.py:2867} INFO - Starting attempt 5 of 8
+[2026-02-02T17:42:23.974+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_download_complete> on 2026-02-02 14:33:38.636833+00:00
+[2026-02-02T17:42:23.979+0000] {standard_task_runner.py:72} INFO - Started process 103 to run task
+[2026-02-02T17:42:23.981+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'check_download_complete', 'manual__2026-02-02T14:33:38.636833+00:00', '--job-id', '279', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmp9gmha76t']
+[2026-02-02T17:42:23.982+0000] {standard_task_runner.py:105} INFO - Job 279: Subtask check_download_complete
+[2026-02-02T17:42:23.990+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-02T17:42:24.010+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.check_download_complete manual__2026-02-02T14:33:38.636833+00:00 [running]> on host 24f3c6cc0f5a
+[2026-02-02T17:42:24.053+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='check_download_complete' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:33:38.636833+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-02T14:33:38.636833+00:00'
+[2026-02-02T17:42:24.054+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-02T17:42:24.061+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-02T17:42:24.067+0000] {external_task.py:274} INFO - Poking for DAG 'download_iot' on 2026-02-02T14:33:38.636833+00:00 ... 
+[2026-02-02T17:42:24.067+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-02T17:42:24.082+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-02T17:42:24.082+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-02T17:42:24.113+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-02T17:42:24.135+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-02T17:42:24.136+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
