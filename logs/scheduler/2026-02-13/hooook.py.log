@@ -1,0 +1,15 @@
+[2026-02-13T23:59:44.322+0000] {processor.py:186} INFO - Started process (PID=79) to work on /opt/airflow/dags/hooook.py
+[2026-02-13T23:59:44.323+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hooook.py for tasks to queue
+[2026-02-13T23:59:44.324+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:44.324+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hooook.py
+[2026-02-13T23:59:44.561+0000] {processor.py:925} INFO - DAG(s) 'hooooook' retrieved from /opt/airflow/dags/hooook.py
+[2026-02-13T23:59:44.619+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:44.618+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:hooooook
+[2026-02-13T23:59:44.626+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:44.625+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:hooooook
+[2026-02-13T23:59:44.629+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:44.629+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:hooooook
+[2026-02-13T23:59:44.632+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:44.632+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:hooooook
+[2026-02-13T23:59:44.636+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:44.636+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:hooooook
+[2026-02-13T23:59:44.640+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:44.640+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:hooooook
+[2026-02-13T23:59:44.644+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:44.643+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:hooooook
+[2026-02-13T23:59:44.644+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:44.644+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-13T23:59:44.651+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:44.651+0000] {dag.py:3262} INFO - Creating ORM DAG for hooooook
+[2026-02-13T23:59:44.657+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:44.657+0000] {dag.py:4180} INFO - Setting next_dagrun for hooooook to None, run_after=None
+[2026-02-13T23:59:44.664+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hooook.py took 0.346 seconds

@@ -1,3 +1,4 @@
+
 x-airflow-common: &airflow-common
   build:
     context: ./airflow_dockerfile
@@ -27,37 +28,36 @@ x-airflow-common: &airflow-common
   depends_on:
     postgres:
       condition: service_healthy
+    redis:
+      condition: service_started
   networks:
     - all_in_one
 
 services:
+  # База данных самого Airflow
   postgres:
     image: postgres:15
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-    command: ["postgres", "-c", "wal_level=logical"]
+      POSTGRES_DB: airflow
     ports:
       - "5432:5432"
-    restart: always
-    volumes:
-      - ./postgres-db-volume:/var/lib/postgresql/data
-      - ./src/init_db:/docker-entrypoint-initdb.d
     healthcheck:
-      test: [ "CMD", "pg_isready", "-U", "airflow" ]
+      test: [ "CMD", "pg_isready", "-U", "${POSTGRES_USER}" ]
       interval: 5s
       retries: 5
     networks:
       - all_in_one
 
-
+  # Ваше хранилище (куда пишет DAG)
   postgres_storage_db:
     image: postgres:15
     environment:
       POSTGRES_USER: ${POSTGRES_STORAGE_USER}
       POSTGRES_PASSWORD: ${POSTGRES_STORAGE_PASSWORD}
-      POSTGRES_BD: ${POSTGRES_STORAGE_DB}
-    command: ["postgres", "-c", "wal_level=logical"]
+      POSTGRES_DB: ${POSTGRES_STORAGE_DB} # Исправлено с POSTGRES_BD
+    command: ["postgres", "-p", "5400", "-c", "wal_level=logical"] # Принудительно порт 5400
     ports:
       - "5400:5432"
     restart: always
@@ -65,7 +65,7 @@ services:
       - ./postgres-storage-db-volume:/var/lib/postgresql/data
       - ./postgres_dockerfile/create_db.sql:/docker-entrypoint-initdb.d/init.sql
     healthcheck:
-      test: [ "CMD", "pg_isready", "-U", "postgres" ]
+      test: [ "CMD", "pg_isready", "-U", "${POSTGRES_STORAGE_USER}", "-p", "5400" ]
       interval: 5s
       retries: 5
     networks:
@@ -74,11 +74,11 @@ services:
   redis:
     image: redis:latest
     container_name: redis
-    ports:
-      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
     networks:
       - all_in_one
-
 
   af-webserver:
     <<: *airflow-common
@@ -98,46 +98,28 @@ services:
     <<: *airflow-common
     container_name: af-worker
     command: celery worker
-    ports:
-      - "4041:4041"
     restart: always
 
   airflow-init:
     <<: *airflow-common
     container_name: airflow-init
+    entrypoint: /bin/bash
     command:
-      - bash
       - -c
       - |
-          echo "Airflow version"
-          airflow version
-
-          airflow connections add 'backend_db' \
-            --conn-type 'postgres' \
-            --conn-host 'postgres' \
-            --conn-login "${POSTGRES_USER}" \
-            --conn-password "${POSTGRES_PASSWORD}" \
-            --conn-schema 'backend' \
-            --conn-port 5432
-        
-          airflow connections add 'metadata_db' \
-            --conn-type 'postgres' \
-            --conn-host 'postgres' \
-            --conn-login "${POSTGRES_USER}" \
-            --conn-password "${POSTGRES_PASSWORD}" \
-            --conn-schema 'metadata' \
-            --conn-port 5432
-
+          airflow db migrate
+          airflow users create --username ${_AIRFLOW_WWW_USER_USERNAME} --password ${_AIRFLOW_WWW_USER_PASSWORD} --firstname Admin --lastname Admin --role Admin --email admin@example.com
+          
+          # Настройка подключения к вашему хранилищу
           airflow connections add 'my_postgres' \
             --conn-type 'postgres' \
-            --conn-host 'postgres' \
-            --conn-login 'postgres' \
-            --conn-password 'postgres' \
-            --conn-port 5400 
-
-volumes:
-  postgres-db-volume:
+            --conn-host 'postgres_storage_db' \
+            --conn-login "${POSTGRES_STORAGE_USER}" \
+            --conn-password "${POSTGRES_STORAGE_PASSWORD}" \
+            --conn-schema "${POSTGRES_STORAGE_DB}" \
+            --conn-port 5400
 
 networks:
   all_in_one:
     driver: bridge
+

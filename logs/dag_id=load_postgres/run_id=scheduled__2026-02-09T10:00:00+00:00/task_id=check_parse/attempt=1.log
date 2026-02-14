@@ -1,0 +1,162 @@
+[2026-02-14T00:09:19.773+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-14T00:09:19.786+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [queued]>
+[2026-02-14T00:09:19.791+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [queued]>
+[2026-02-14T00:09:19.792+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-14T00:09:19.799+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_parse> on 2026-02-09 10:00:00+00:00
+[2026-02-14T00:09:19.803+0000] {standard_task_runner.py:72} INFO - Started process 115 to run task
+[2026-02-14T00:09:19.805+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'load_postgres', 'check_parse', 'scheduled__2026-02-09T10:00:00+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/load_postrges.py', '--cfg-path', '/tmp/tmpjux2o_14']
+[2026-02-14T00:09:19.807+0000] {standard_task_runner.py:105} INFO - Job 12: Subtask check_parse
+[2026-02-14T00:09:19.815+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-14T00:09:19.837+0000] {task_command.py:467} INFO - Running <TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [running]> on host 13185f5c75e0
+[2026-02-14T00:09:19.838+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-14T00:09:19.884+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='load_postgres' AIRFLOW_CTX_TASK_ID='check_parse' AIRFLOW_CTX_EXECUTION_DATE='2026-02-09T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-09T10:00:00+00:00'
+[2026-02-14T00:09:19.885+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-14T00:09:19.892+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-14T00:09:19.898+0000] {external_task.py:274} INFO - Poking for DAG 'parse_iot' on 2026-02-09T10:00:00+00:00 ... 
+[2026-02-14T00:09:19.899+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-14T00:09:19.915+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-14T00:09:19.915+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-14T00:09:19.937+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-14T00:09:19.954+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-14T00:09:19.955+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-14T16:30:25.581+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-14T16:30:25.594+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [queued]>
+[2026-02-14T16:30:25.600+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [queued]>
+[2026-02-14T16:30:25.600+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-14T16:30:25.606+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_parse> on 2026-02-09 10:00:00+00:00
+[2026-02-14T16:30:25.611+0000] {standard_task_runner.py:72} INFO - Started process 146 to run task
+[2026-02-14T16:30:25.613+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'load_postgres', 'check_parse', 'scheduled__2026-02-09T10:00:00+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/load_postrges.py', '--cfg-path', '/tmp/tmpc02msqzc']
+[2026-02-14T16:30:25.615+0000] {standard_task_runner.py:105} INFO - Job 20: Subtask check_parse
+[2026-02-14T16:30:25.623+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-14T16:30:25.644+0000] {task_command.py:467} INFO - Running <TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [running]> on host a5c4ed865bb5
+[2026-02-14T16:30:25.644+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-14T16:30:25.689+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='load_postgres' AIRFLOW_CTX_TASK_ID='check_parse' AIRFLOW_CTX_EXECUTION_DATE='2026-02-09T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-09T10:00:00+00:00'
+[2026-02-14T16:30:25.690+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-14T16:30:25.697+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-14T16:30:25.703+0000] {external_task.py:274} INFO - Poking for DAG 'parse_iot' on 2026-02-09T10:00:00+00:00 ... 
+[2026-02-14T16:30:25.704+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-14T16:30:25.720+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-14T16:30:25.720+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-14T16:30:25.745+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-14T16:30:25.760+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-14T16:30:25.761+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-14T16:31:27.167+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-14T16:31:27.180+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [queued]>
+[2026-02-14T16:31:27.186+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [queued]>
+[2026-02-14T16:31:27.186+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-14T16:31:27.201+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_parse> on 2026-02-09 10:00:00+00:00
+[2026-02-14T16:31:27.209+0000] {standard_task_runner.py:72} INFO - Started process 277 to run task
+[2026-02-14T16:31:27.212+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'load_postgres', 'check_parse', 'scheduled__2026-02-09T10:00:00+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/load_postrges.py', '--cfg-path', '/tmp/tmpyw6m11ws']
+[2026-02-14T16:31:27.213+0000] {standard_task_runner.py:105} INFO - Job 52: Subtask check_parse
+[2026-02-14T16:31:27.222+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-14T16:31:27.244+0000] {task_command.py:467} INFO - Running <TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [running]> on host a5c4ed865bb5
+[2026-02-14T16:31:27.244+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-14T16:31:27.289+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='load_postgres' AIRFLOW_CTX_TASK_ID='check_parse' AIRFLOW_CTX_EXECUTION_DATE='2026-02-09T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-09T10:00:00+00:00'
+[2026-02-14T16:31:27.290+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-14T16:31:27.297+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-14T16:31:27.304+0000] {external_task.py:274} INFO - Poking for DAG 'parse_iot' on 2026-02-09T10:00:00+00:00 ... 
+[2026-02-14T16:31:27.305+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-14T16:31:27.325+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-14T16:31:27.325+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-14T16:31:27.344+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-14T16:31:27.361+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-14T16:31:27.362+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-14T16:32:29.933+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-14T16:32:29.946+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [queued]>
+[2026-02-14T16:32:29.951+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [queued]>
+[2026-02-14T16:32:29.951+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-14T16:32:29.957+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_parse> on 2026-02-09 10:00:00+00:00
+[2026-02-14T16:32:29.961+0000] {standard_task_runner.py:72} INFO - Started process 435 to run task
+[2026-02-14T16:32:29.963+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'load_postgres', 'check_parse', 'scheduled__2026-02-09T10:00:00+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/load_postrges.py', '--cfg-path', '/tmp/tmp49hgh2yd']
+[2026-02-14T16:32:29.964+0000] {standard_task_runner.py:105} INFO - Job 92: Subtask check_parse
+[2026-02-14T16:32:29.972+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-14T16:32:29.993+0000] {task_command.py:467} INFO - Running <TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [running]> on host a5c4ed865bb5
+[2026-02-14T16:32:29.994+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-14T16:32:30.043+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='load_postgres' AIRFLOW_CTX_TASK_ID='check_parse' AIRFLOW_CTX_EXECUTION_DATE='2026-02-09T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-09T10:00:00+00:00'
+[2026-02-14T16:32:30.043+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-14T16:32:30.050+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-14T16:32:30.055+0000] {external_task.py:274} INFO - Poking for DAG 'parse_iot' on 2026-02-09T10:00:00+00:00 ... 
+[2026-02-14T16:32:30.056+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-14T16:32:30.072+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-14T16:32:30.072+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-14T16:32:30.095+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-14T16:32:30.114+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-14T16:32:30.115+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-14T16:33:32.215+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-14T16:33:32.228+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [queued]>
+[2026-02-14T16:33:32.233+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [queued]>
+[2026-02-14T16:33:32.233+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-14T16:33:32.239+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_parse> on 2026-02-09 10:00:00+00:00
+[2026-02-14T16:33:32.244+0000] {standard_task_runner.py:72} INFO - Started process 531 to run task
+[2026-02-14T16:33:32.246+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'load_postgres', 'check_parse', 'scheduled__2026-02-09T10:00:00+00:00', '--job-id', '116', '--raw', '--subdir', 'DAGS_FOLDER/load_postrges.py', '--cfg-path', '/tmp/tmpq4qdd91u']
+[2026-02-14T16:33:32.247+0000] {standard_task_runner.py:105} INFO - Job 116: Subtask check_parse
+[2026-02-14T16:33:32.255+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-14T16:33:32.277+0000] {task_command.py:467} INFO - Running <TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [running]> on host a5c4ed865bb5
+[2026-02-14T16:33:32.277+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-14T16:33:32.320+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='load_postgres' AIRFLOW_CTX_TASK_ID='check_parse' AIRFLOW_CTX_EXECUTION_DATE='2026-02-09T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-09T10:00:00+00:00'
+[2026-02-14T16:33:32.320+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-14T16:33:32.327+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-14T16:33:32.333+0000] {external_task.py:274} INFO - Poking for DAG 'parse_iot' on 2026-02-09T10:00:00+00:00 ... 
+[2026-02-14T16:33:32.333+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-14T16:33:32.349+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-14T16:33:32.350+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-14T16:33:32.378+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-14T16:33:32.394+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-14T16:33:32.395+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-14T16:34:33.448+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-14T16:34:33.464+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [queued]>
+[2026-02-14T16:34:33.470+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [queued]>
+[2026-02-14T16:34:33.471+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-14T16:34:33.479+0000] {taskinstance.py:2890} INFO - Executing <Task(ExternalTaskSensor): check_parse> on 2026-02-09 10:00:00+00:00
+[2026-02-14T16:34:33.484+0000] {standard_task_runner.py:72} INFO - Started process 645 to run task
+[2026-02-14T16:34:33.486+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'load_postgres', 'check_parse', 'scheduled__2026-02-09T10:00:00+00:00', '--job-id', '144', '--raw', '--subdir', 'DAGS_FOLDER/load_postrges.py', '--cfg-path', '/tmp/tmpx8tmvbd_']
+[2026-02-14T16:34:33.487+0000] {standard_task_runner.py:105} INFO - Job 144: Subtask check_parse
+[2026-02-14T16:34:33.496+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-14T16:34:33.519+0000] {task_command.py:467} INFO - Running <TaskInstance: load_postgres.check_parse scheduled__2026-02-09T10:00:00+00:00 [running]> on host a5c4ed865bb5
+[2026-02-14T16:34:33.520+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-14T16:34:33.569+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='load_postgres' AIRFLOW_CTX_TASK_ID='check_parse' AIRFLOW_CTX_EXECUTION_DATE='2026-02-09T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-09T10:00:00+00:00'
+[2026-02-14T16:34:33.569+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-14T16:34:33.577+0000] {baseoperator.py:423} WARNING - ExternalTaskSensor.execute cannot be called outside TaskInstance!
+[2026-02-14T16:34:33.583+0000] {external_task.py:274} INFO - Poking for DAG 'parse_iot' on 2026-02-09T10:00:00+00:00 ... 
+[2026-02-14T16:34:33.583+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/session.py:97: DeprecationWarning: This method is deprecated and will be removed in future.
+  return func(*args, session=session, **kwargs)
+
+[2026-02-14T16:34:33.601+0000] {taskinstance.py:310} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2026-02-14T16:34:33.601+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-14T16:34:33.617+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-14T16:34:33.635+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-14T16:34:33.636+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

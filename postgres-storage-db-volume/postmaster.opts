@@ -1,1 +1,1 @@
-/usr/lib/postgresql/15/bin/postgres "-c" "wal_level=logical"
+/usr/lib/postgresql/15/bin/postgres "-p" "5400" "-c" "wal_level=logical"

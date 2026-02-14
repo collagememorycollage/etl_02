@@ -1,0 +1,43 @@
+[2026-02-13T23:57:37.021+0000] {processor.py:186} INFO - Started process (PID=54) to work on /opt/airflow/dags/load_postrges.py
+[2026-02-13T23:57:37.022+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load_postrges.py for tasks to queue
+[2026-02-13T23:57:37.023+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:57:37.023+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load_postrges.py
+[2026-02-13T23:57:38.114+0000] {processor.py:925} INFO - DAG(s) 'load_postgres' retrieved from /opt/airflow/dags/load_postrges.py
+[2026-02-13T23:57:38.182+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:57:38.181+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:load_postgres
+[2026-02-13T23:57:38.189+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:57:38.188+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:load_postgres
+[2026-02-13T23:57:38.193+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:57:38.193+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:load_postgres
+[2026-02-13T23:57:38.200+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:57:38.199+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:load_postgres
+[2026-02-13T23:57:38.205+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:57:38.205+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:load_postgres
+[2026-02-13T23:57:38.210+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:57:38.209+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:load_postgres
+[2026-02-13T23:57:38.216+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:57:38.216+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:load_postgres
+[2026-02-13T23:57:38.217+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:57:38.217+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-13T23:57:38.228+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:57:38.228+0000] {dag.py:3262} INFO - Creating ORM DAG for load_postgres
+[2026-02-13T23:57:38.238+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:57:38.238+0000] {dag.py:4180} INFO - Setting next_dagrun for load_postgres to 2026-01-30 10:00:00+00:00, run_after=2026-01-31 10:00:00+00:00
+[2026-02-13T23:57:38.251+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load_postrges.py took 1.234 seconds
+[2026-02-13T23:58:08.403+0000] {processor.py:186} INFO - Started process (PID=60) to work on /opt/airflow/dags/load_postrges.py
+[2026-02-13T23:58:08.403+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load_postrges.py for tasks to queue
+[2026-02-13T23:58:08.405+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:58:08.404+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load_postrges.py
+[2026-02-13T23:58:08.770+0000] {processor.py:925} INFO - DAG(s) 'load_postgres' retrieved from /opt/airflow/dags/load_postrges.py
+[2026-02-13T23:58:08.783+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:58:08.782+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-13T23:58:08.796+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:58:08.796+0000] {dag.py:4180} INFO - Setting next_dagrun for load_postgres to 2026-01-30 10:00:00+00:00, run_after=2026-01-31 10:00:00+00:00
+[2026-02-13T23:58:08.808+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load_postrges.py took 0.409 seconds
+[2026-02-13T23:58:38.956+0000] {processor.py:186} INFO - Started process (PID=65) to work on /opt/airflow/dags/load_postrges.py
+[2026-02-13T23:58:38.962+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load_postrges.py for tasks to queue
+[2026-02-13T23:58:38.963+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:58:38.963+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load_postrges.py
+[2026-02-13T23:58:39.248+0000] {processor.py:925} INFO - DAG(s) 'load_postgres' retrieved from /opt/airflow/dags/load_postrges.py
+[2026-02-13T23:58:39.264+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:58:39.264+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-13T23:58:39.279+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:58:39.279+0000] {dag.py:4180} INFO - Setting next_dagrun for load_postgres to 2026-01-30 10:00:00+00:00, run_after=2026-01-31 10:00:00+00:00
+[2026-02-13T23:58:39.291+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load_postrges.py took 0.338 seconds
+[2026-02-13T23:59:09.440+0000] {processor.py:186} INFO - Started process (PID=70) to work on /opt/airflow/dags/load_postrges.py
+[2026-02-13T23:59:09.440+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load_postrges.py for tasks to queue
+[2026-02-13T23:59:09.442+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:09.442+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load_postrges.py
+[2026-02-13T23:59:09.718+0000] {processor.py:925} INFO - DAG(s) 'load_postgres' retrieved from /opt/airflow/dags/load_postrges.py
+[2026-02-13T23:59:09.731+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:09.731+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-13T23:59:09.746+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:09.746+0000] {dag.py:4180} INFO - Setting next_dagrun for load_postgres to 2026-01-30 10:00:00+00:00, run_after=2026-01-31 10:00:00+00:00
+[2026-02-13T23:59:09.756+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load_postrges.py took 0.321 seconds
+[2026-02-13T23:59:39.906+0000] {processor.py:186} INFO - Started process (PID=75) to work on /opt/airflow/dags/load_postrges.py
+[2026-02-13T23:59:39.912+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/load_postrges.py for tasks to queue
+[2026-02-13T23:59:39.913+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:39.913+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/load_postrges.py
+[2026-02-13T23:59:40.184+0000] {processor.py:925} INFO - DAG(s) 'load_postgres' retrieved from /opt/airflow/dags/load_postrges.py
+[2026-02-13T23:59:40.196+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:40.196+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-13T23:59:40.209+0000] {logging_mixin.py:190} INFO - [2026-02-13T23:59:40.209+0000] {dag.py:4180} INFO - Setting next_dagrun for load_postgres to 2026-01-30 10:00:00+00:00, run_after=2026-01-31 10:00:00+00:00
+[2026-02-13T23:59:40.224+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/load_postrges.py took 0.322 seconds

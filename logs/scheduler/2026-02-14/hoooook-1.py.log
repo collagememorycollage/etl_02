@@ -1,0 +1,112 @@
+[2026-02-14T00:17:43.431+0000] {processor.py:186} INFO - Started process (PID=189) to work on /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:17:43.432+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hoooook-1.py for tasks to queue
+[2026-02-14T00:17:43.433+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:17:43.433+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:17:43.683+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:17:43.683+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/hoooook-1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/hoooook-1.py", line 37, in <module>
+    fill_task >> check_task
+NameError: name 'fill_task' is not defined
+[2026-02-14T00:17:43.683+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:17:43.699+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hoooook-1.py took 0.272 seconds
+[2026-02-14T00:18:13.982+0000] {processor.py:186} INFO - Started process (PID=198) to work on /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:18:13.983+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hoooook-1.py for tasks to queue
+[2026-02-14T00:18:13.984+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:18:13.984+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:18:14.236+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:18:14.236+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/hoooook-1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/hoooook-1.py", line 37, in <module>
+    fill_task >> check_task
+NameError: name 'fill_task' is not defined
+[2026-02-14T00:18:14.236+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:18:14.251+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hoooook-1.py took 0.272 seconds
+[2026-02-14T00:18:33.332+0000] {processor.py:186} INFO - Started process (PID=202) to work on /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:18:33.338+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hoooook-1.py for tasks to queue
+[2026-02-14T00:18:33.339+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:18:33.339+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:18:33.584+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:18:33.583+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/hoooook-1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/hoooook-1.py", line 18, in <module>
+    default_args=args,
+NameError: name 'args' is not defined
+[2026-02-14T00:18:33.584+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:18:33.599+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hoooook-1.py took 0.270 seconds
+[2026-02-14T00:19:04.249+0000] {processor.py:186} INFO - Started process (PID=213) to work on /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:19:04.250+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hoooook-1.py for tasks to queue
+[2026-02-14T00:19:04.251+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:19:04.251+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:19:04.495+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:19:04.494+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/hoooook-1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/hoooook-1.py", line 18, in <module>
+    default_args=args,
+NameError: name 'args' is not defined
+[2026-02-14T00:19:04.495+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:19:04.511+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hoooook-1.py took 0.266 seconds
+[2026-02-14T00:19:10.702+0000] {processor.py:186} INFO - Started process (PID=220) to work on /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:19:10.708+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hoooook-1.py for tasks to queue
+[2026-02-14T00:19:10.710+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:19:10.709+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:19:10.951+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:19:10.951+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/hoooook-1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/hoooook-1.py", line 54, in <module>
+    fill_task >> check_task
+NameError: name 'fill_task' is not defined
+[2026-02-14T00:19:10.951+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:19:10.966+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hoooook-1.py took 0.267 seconds
+[2026-02-14T00:19:41.556+0000] {processor.py:186} INFO - Started process (PID=229) to work on /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:19:41.563+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hoooook-1.py for tasks to queue
+[2026-02-14T00:19:41.564+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:19:41.564+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:19:41.809+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:19:41.809+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/hoooook-1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/hoooook-1.py", line 54, in <module>
+    fill_task >> check_task
+NameError: name 'fill_task' is not defined
+[2026-02-14T00:19:41.809+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:19:41.824+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hoooook-1.py took 0.271 seconds
+[2026-02-14T00:19:57.827+0000] {processor.py:186} INFO - Started process (PID=231) to work on /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:19:57.827+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hoooook-1.py for tasks to queue
+[2026-02-14T00:19:57.829+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:19:57.829+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:19:58.061+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:19:58.060+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/hoooook-1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/hoooook-1.py", line 50, in <module>
+    sql=insert_data_sql
+NameError: name 'insert_data_sql' is not defined
+[2026-02-14T00:19:58.061+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:19:58.078+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hoooook-1.py took 0.255 seconds
+[2026-02-14T00:20:28.518+0000] {processor.py:186} INFO - Started process (PID=240) to work on /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:20:28.518+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/hoooook-1.py for tasks to queue
+[2026-02-14T00:20:28.520+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:20:28.519+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:20:28.764+0000] {logging_mixin.py:190} INFO - [2026-02-14T00:20:28.763+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/hoooook-1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/hoooook-1.py", line 50, in <module>
+    sql=insert_data_sql
+NameError: name 'insert_data_sql' is not defined
+[2026-02-14T00:20:28.764+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/hoooook-1.py
+[2026-02-14T00:20:28.778+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/hoooook-1.py took 0.265 seconds
