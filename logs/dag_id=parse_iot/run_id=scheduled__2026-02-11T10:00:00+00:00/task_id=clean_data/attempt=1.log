@@ -21,3 +21,49 @@
 [2026-02-14T16:34:02.339+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
 [2026-02-14T16:34:02.357+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
 [2026-02-14T16:34:02.358+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-14T17:51:24.752+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-14T17:51:24.771+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.clean_data scheduled__2026-02-11T10:00:00+00:00 [queued]>
+[2026-02-14T17:51:24.778+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.clean_data scheduled__2026-02-11T10:00:00+00:00 [queued]>
+[2026-02-14T17:51:24.778+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-14T17:51:24.786+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): clean_data> on 2026-02-11 10:00:00+00:00
+[2026-02-14T17:51:24.791+0000] {standard_task_runner.py:72} INFO - Started process 583 to run task
+[2026-02-14T17:51:24.793+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'clean_data', 'scheduled__2026-02-11T10:00:00+00:00', '--job-id', '129', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmp1x5e1wcj']
+[2026-02-14T17:51:24.794+0000] {standard_task_runner.py:105} INFO - Job 129: Subtask clean_data
+[2026-02-14T17:51:24.803+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-14T17:51:24.827+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.clean_data scheduled__2026-02-11T10:00:00+00:00 [running]> on host 9052c134cdec
+[2026-02-14T17:51:24.828+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-14T17:51:24.877+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='clean_data' AIRFLOW_CTX_EXECUTION_DATE='2026-02-11T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-11T10:00:00+00:00'
+[2026-02-14T17:51:24.878+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-14T17:51:33.914+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-02-14T17:51:33.923+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-14T17:51:33.923+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=parse_iot, task_id=clean_data, run_id=scheduled__2026-02-11T10:00:00+00:00, execution_date=20260211T100000, start_date=20260214T175124, end_date=20260214T175133
+[2026-02-14T17:51:34.017+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-14T17:51:34.039+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-14T17:51:34.040+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-14T18:16:10.912+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-14T18:16:10.928+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.clean_data scheduled__2026-02-11T10:00:00+00:00 [queued]>
+[2026-02-14T18:16:10.934+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.clean_data scheduled__2026-02-11T10:00:00+00:00 [queued]>
+[2026-02-14T18:16:10.934+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-14T18:16:10.941+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): clean_data> on 2026-02-11 10:00:00+00:00
+[2026-02-14T18:16:10.946+0000] {standard_task_runner.py:72} INFO - Started process 479 to run task
+[2026-02-14T18:16:10.947+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'clean_data', 'scheduled__2026-02-11T10:00:00+00:00', '--job-id', '103', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpvmmdpqyz']
+[2026-02-14T18:16:10.949+0000] {standard_task_runner.py:105} INFO - Job 103: Subtask clean_data
+[2026-02-14T18:16:10.957+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-14T18:16:10.979+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.clean_data scheduled__2026-02-11T10:00:00+00:00 [running]> on host bb762b62a2c2
+[2026-02-14T18:16:10.979+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-14T18:16:11.028+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='clean_data' AIRFLOW_CTX_EXECUTION_DATE='2026-02-11T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-11T10:00:00+00:00'
+[2026-02-14T18:16:11.028+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-14T18:16:19.768+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-02-14T18:16:19.774+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-14T18:16:19.775+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=parse_iot, task_id=clean_data, run_id=scheduled__2026-02-11T10:00:00+00:00, execution_date=20260211T100000, start_date=20260214T181610, end_date=20260214T181619
+[2026-02-14T18:16:19.817+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-14T18:16:19.835+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-14T18:16:19.836+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,222 @@
+[2026-02-14T18:07:15.751+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-14T18:07:15.763+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_postgres.load_csv_to_postgres scheduled__2026-01-30T10:00:00+00:00 [queued]>
+[2026-02-14T18:07:15.769+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_postgres.load_csv_to_postgres scheduled__2026-01-30T10:00:00+00:00 [queued]>
+[2026-02-14T18:07:15.769+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-14T18:07:15.775+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): load_csv_to_postgres> on 2026-01-30 10:00:00+00:00
+[2026-02-14T18:07:15.780+0000] {standard_task_runner.py:72} INFO - Started process 1071 to run task
+[2026-02-14T18:07:15.782+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'load_postgres', 'load_csv_to_postgres', 'scheduled__2026-01-30T10:00:00+00:00', '--job-id', '251', '--raw', '--subdir', 'DAGS_FOLDER/load_postrges.py', '--cfg-path', '/tmp/tmpzclultja']
+[2026-02-14T18:07:15.783+0000] {standard_task_runner.py:105} INFO - Job 251: Subtask load_csv_to_postgres
+[2026-02-14T18:07:15.792+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-14T18:07:15.814+0000] {task_command.py:467} INFO - Running <TaskInstance: load_postgres.load_csv_to_postgres scheduled__2026-01-30T10:00:00+00:00 [running]> on host 9052c134cdec
+[2026-02-14T18:07:15.814+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-14T18:07:15.856+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='load_postgres' AIRFLOW_CTX_TASK_ID='load_csv_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2026-01-30T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-30T10:00:00+00:00'
+[2026-02-14T18:07:15.856+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-14T18:07:15.922+0000] {base.py:84} INFO - Retrieving connection '***-db'
+[2026-02-14T18:07:16.316+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1890, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 982, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/airflow/.local/lib/python3.9/site-packages/psycopg2/extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.UndefinedColumn: column "room_id/id" of relation "raw_data" does not exist
+LINE 1: INSERT INTO raw_data (id, "room_id/id", noted_date, temp, "o...
+                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/load_postrges.py", line 57, in load_csv_to_postgres
+    df.to_sql(table_name, hook.get_sqlalchemy_engine(), if_exists='append', index=False)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/generic.py", line 3008, in to_sql
+    return sql.to_sql(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 788, in to_sql
+    return pandas_sql.to_sql(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 1958, in to_sql
+    total_inserted = sql_engine.insert_records(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 1507, in insert_records
+    raise err
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 1498, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 1059, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 951, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1385, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1890, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 982, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/airflow/.local/lib/python3.9/site-packages/psycopg2/extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column "room_id/id" of relation "raw_data" does not exist
+LINE 1: INSERT INTO raw_data (id, "room_id/id", noted_date, temp, "o...
+                                  ^
+
+[SQL: INSERT INTO raw_data (id, "room_id/id", noted_date, temp, "out/in") VALUES (%(id)s, %(room_id/id)s, %(noted_date)s, %(temp)s, %(out/in)s)]
+[parameters: ({'id': '196134_bd201015', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 29, 'out/in': 'In'}, {'id': '196131_7bca51bc', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 29, 'out/in': 'In'}, {'id': '196127_522915e3', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 41, 'out/in': 'Out'}, {'id': '196128_be0919cf', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 41, 'out/in': 'Out'}, {'id': '196126_d30b72fb', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 31, 'out/in': 'In'}, {'id': '196125_b0fa0b41', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 31, 'out/in': 'In'}, {'id': '196121_01544d45', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 29, 'out/in': 'In'}, {'id': '196122_f8b80a9f', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 29, 'out/in': 'In'}  ... displaying 10 of 97605 total bound parameter sets ...  {'id': '123297_4d8e690b', 'room_id/id': 'Room Admin', 'noted_date': '2018-07-28 00:00:00', 'temp': 31, 'out/in': 'In'}, {'id': '133741_32958703', 'room_id/id': 'Room Admin', 'noted_date': '2018-07-28 00:00:00', 'temp': 31, 'out/in': 'In'})]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2026-02-14T18:07:16.327+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=load_***, task_id=load_csv_to_***, run_id=scheduled__2026-01-30T10:00:00+00:00, execution_date=20260130T100000, start_date=20260214T180715, end_date=20260214T180716
+[2026-02-14T18:07:16.350+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-14T18:07:16.350+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 251 for task load_csv_to_*** ((psycopg2.errors.UndefinedColumn) column "room_id/id" of relation "raw_data" does not exist
+LINE 1: INSERT INTO raw_data (id, "room_id/id", noted_date, temp, "o...
+                                  ^
+
+[SQL: INSERT INTO raw_data (id, "room_id/id", noted_date, temp, "out/in") VALUES (%(id)s, %(room_id/id)s, %(noted_date)s, %(temp)s, %(out/in)s)]
+[parameters: ({'id': '196134_bd201015', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 29, 'out/in': 'In'}, {'id': '196131_7bca51bc', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 29, 'out/in': 'In'}, {'id': '196127_522915e3', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 41, 'out/in': 'Out'}, {'id': '196128_be0919cf', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 41, 'out/in': 'Out'}, {'id': '196126_d30b72fb', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 31, 'out/in': 'In'}, {'id': '196125_b0fa0b41', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 31, 'out/in': 'In'}, {'id': '196121_01544d45', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 29, 'out/in': 'In'}, {'id': '196122_f8b80a9f', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 29, 'out/in': 'In'}  ... displaying 10 of 97605 total bound parameter sets ...  {'id': '123297_4d8e690b', 'room_id/id': 'Room Admin', 'noted_date': '2018-07-28 00:00:00', 'temp': 31, 'out/in': 'In'}, {'id': '133741_32958703', 'room_id/id': 'Room Admin', 'noted_date': '2018-07-28 00:00:00', 'temp': 31, 'out/in': 'In'})]
+(Background on this error at: https://sqlalche.me/e/14/f405); 1071)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1890, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 982, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/airflow/.local/lib/python3.9/site-packages/psycopg2/extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.UndefinedColumn: column "room_id/id" of relation "raw_data" does not exist
+LINE 1: INSERT INTO raw_data (id, "room_id/id", noted_date, temp, "o...
+                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/load_postrges.py", line 57, in load_csv_to_postgres
+    df.to_sql(table_name, hook.get_sqlalchemy_engine(), if_exists='append', index=False)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/core/generic.py", line 3008, in to_sql
+    return sql.to_sql(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 788, in to_sql
+    return pandas_sql.to_sql(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 1958, in to_sql
+    total_inserted = sql_engine.insert_records(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 1507, in insert_records
+    raise err
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 1498, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 1059, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/sql.py", line 951, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1385, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1890, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 982, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/airflow/.local/lib/python3.9/site-packages/psycopg2/extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column "room_id/id" of relation "raw_data" does not exist
+LINE 1: INSERT INTO raw_data (id, "room_id/id", noted_date, temp, "o...
+                                  ^
+
+[SQL: INSERT INTO raw_data (id, "room_id/id", noted_date, temp, "out/in") VALUES (%(id)s, %(room_id/id)s, %(noted_date)s, %(temp)s, %(out/in)s)]
+[parameters: ({'id': '196134_bd201015', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 29, 'out/in': 'In'}, {'id': '196131_7bca51bc', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 29, 'out/in': 'In'}, {'id': '196127_522915e3', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 41, 'out/in': 'Out'}, {'id': '196128_be0919cf', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 41, 'out/in': 'Out'}, {'id': '196126_d30b72fb', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 31, 'out/in': 'In'}, {'id': '196125_b0fa0b41', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 31, 'out/in': 'In'}, {'id': '196121_01544d45', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 29, 'out/in': 'In'}, {'id': '196122_f8b80a9f', 'room_id/id': 'Room Admin', 'noted_date': '2018-12-08 00:00:00', 'temp': 29, 'out/in': 'In'}  ... displaying 10 of 97605 total bound parameter sets ...  {'id': '123297_4d8e690b', 'room_id/id': 'Room Admin', 'noted_date': '2018-07-28 00:00:00', 'temp': 31, 'out/in': 'In'}, {'id': '133741_32958703', 'room_id/id': 'Room Admin', 'noted_date': '2018-07-28 00:00:00', 'temp': 31, 'out/in': 'In'})]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2026-02-14T18:07:16.395+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2026-02-14T18:07:16.410+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-14T18:07:16.416+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-14T18:16:06.285+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-14T18:16:06.300+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_postgres.load_csv_to_postgres scheduled__2026-01-30T10:00:00+00:00 [queued]>
+[2026-02-14T18:16:06.307+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_postgres.load_csv_to_postgres scheduled__2026-01-30T10:00:00+00:00 [queued]>
+[2026-02-14T18:16:06.307+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-14T18:16:06.315+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): load_csv_to_postgres> on 2026-01-30 10:00:00+00:00
+[2026-02-14T18:16:06.320+0000] {standard_task_runner.py:72} INFO - Started process 475 to run task
+[2026-02-14T18:16:06.322+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'load_postgres', 'load_csv_to_postgres', 'scheduled__2026-01-30T10:00:00+00:00', '--job-id', '102', '--raw', '--subdir', 'DAGS_FOLDER/load_postrges.py', '--cfg-path', '/tmp/tmp29abvps1']
+[2026-02-14T18:16:06.324+0000] {standard_task_runner.py:105} INFO - Job 102: Subtask load_csv_to_postgres
+[2026-02-14T18:16:06.333+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-14T18:16:06.359+0000] {task_command.py:467} INFO - Running <TaskInstance: load_postgres.load_csv_to_postgres scheduled__2026-01-30T10:00:00+00:00 [running]> on host bb762b62a2c2
+[2026-02-14T18:16:06.360+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-14T18:16:06.406+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='load_postgres' AIRFLOW_CTX_TASK_ID='load_csv_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2026-01-30T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-30T10:00:00+00:00'
+[2026-02-14T18:16:06.406+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-14T18:16:06.425+0000] {base.py:84} INFO - Retrieving connection '***-db'
+[2026-02-14T18:16:06.462+0000] {logging_mixin.py:190} INFO - Данные успешно загружены в таблицу raw_data
+[2026-02-14T18:16:06.463+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-02-14T18:16:06.469+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-14T18:16:06.470+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=load_***, task_id=load_csv_to_***, run_id=scheduled__2026-01-30T10:00:00+00:00, execution_date=20260130T100000, start_date=20260214T181606, end_date=20260214T181606
+[2026-02-14T18:16:06.494+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-14T18:16:06.507+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-14T18:16:06.508+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

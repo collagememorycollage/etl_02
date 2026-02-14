@@ -86,11 +86,15 @@ DAG'и имеют следующую структуру:
 3) load_postgres
 
 
-[img_1]
-
-[img_2]
+![3_dag](https://github.com/collagememorycollage/etl_02/raw/main/imgs/3.jpg)
 
 
+Также был создан connection для работы с postrgesql. Можно проверить доступ зайдя на webserver и выполнить комманду для подуключения:
+```
+psql -U postgres -h etl_02-postgres_storage_db-1 -d postgres -p 5400 (пароль postgres)
+
+```
+![4_dag](https://github.com/collagememorycollage/etl_02/raw/main/imgs/4.jpg)
 
 
 

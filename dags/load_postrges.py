@@ -10,7 +10,7 @@ from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
 from airflow.sensors.external_task import ExternalTaskSensor
 from airflow.sensors.python import PythonSensor
-
+from airflow.providers.postgres.hooks.postgres import PostgresHook
 import os
 import json
 import pandas as pd
@@ -36,39 +36,26 @@ args = {
 
 
 def check_connect_to_DB():
-    db_user = "postgres"
-    db_password = "postgres"
-    db_host = "etl_02-postgres_storage_db-1"
-    db_port = "5432"
-    db_name = "postgres"
+    hook = PostgresHook(postgres_conn_id="postgres-db")
 
-    engine = create_engine(f"postgresql+psycopg2://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}")
+    status, msg = hook.test_connection()
 
-    try:
-        # Пробуем выполнить простой SQL-запрос
-        with engine.connect() as conn:
-            result = conn.execute(text("SELECT 1"))
-            print("Подключение успешно:", result.scalar())
-            return True
-    except Exception as e:
-        print("Ошибка подключения:", e)
+    if not status:
+        print(f"Подключение не удалось {msg}")
         return False
+    print(f"Подключение удалось {msg}")
+    return True
 
-
-def load_csv_to_DB():
-    db_user = "postgres"
-    db_password = "postgres"
-    db_host = "etl_02-postgres_storage_db-1"
-    db_port = "5432"
-    db_name = "postgres"
-
-    engine = create_engine(f"postgresql+psycopg2://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}")
+def load_csv_to_postgres():
+    hook = PostgresHook(postgres_conn_id="postgres-db")
 
     csv_path = "/opt/airflow/data/IOT-temp_clean.csv"   # путь к CSV
-    table_name = "iot_data"
-
+    table_name = "raw_data"
+   
     df = pd.read_csv(csv_path)
-    df.to_sql(table_name, engine, if_exists="replace", index=False)
+   
+    df.to_sql(table_name, hook.get_sqlalchemy_engine(), if_exists='append', index=False)
+
     print(f"Данные успешно загружены в таблицу {table_name}")
 
 
@@ -106,10 +93,10 @@ with DAG(
 
 
 
-    load_csv_to_DB = PythonOperator(
-        task_id="load_csv_to_DB",
-        python_callable=load_csv_to_DB
+    load_csv_to_postgres = PythonOperator(
+        task_id="load_csv_to_postgres",
+        python_callable=load_csv_to_postgres
     )
 
-start >>  check_parse >> check_connect_to_DB >> load_csv_to_DB >> end
+start >>  check_parse >> check_connect_to_DB >> load_csv_to_postgres >> end
 
