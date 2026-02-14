@@ -60,3 +60,163 @@
 	Is the server running on that host and accepting TCP/IP connections?
 
 (Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:44:20.687+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:44:20.688+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:45:20.724+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:45:20.725+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:46:20.738+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:46:20.739+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:47:20.799+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:47:20.800+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:48:20.853+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:48:20.854+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:49:20.914+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:49:20.915+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:50:20.976+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:50:20.976+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:51:20.983+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:51:20.984+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:52:21.044+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:52:21.045+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:53:21.067+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:53:21.068+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:54:21.128+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:54:21.129+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:55:21.189+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:55:21.190+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:56:21.250+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:56:21.251+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:57:21.311+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:57:21.312+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:58:21.356+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:58:21.357+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T16:59:21.392+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T16:59:21.393+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:00:21.407+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:00:21.408+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:01:21.468+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:01:21.469+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:02:21.477+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:02:21.478+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:03:21.508+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:03:21.509+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:04:21.565+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:04:21.566+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:05:21.570+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:05:21.571+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:06:21.632+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:06:21.633+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:07:21.645+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:07:21.646+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:08:21.707+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:08:21.708+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:09:21.734+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:09:21.735+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:10:21.795+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:10:21.796+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:11:21.852+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:11:21.853+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:12:21.874+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:12:21.875+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:13:21.935+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:13:21.936+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:14:21.992+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:14:21.993+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2026-02-14T17:15:22.053+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7be99cfe41f0>
+[2026-02-14T17:15:22.054+0000] {logging_mixin.py:190} INFO - Ошибка подключения: (psycopg2.OperationalError) connection to server at "etl_02-postgres_storage_db-1" (10.10.1.4), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
