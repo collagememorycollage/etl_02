@@ -3046,3 +3046,139 @@
 [2026-02-14T17:17:57.909+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:17:57.909+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2026-02-14T17:17:57.921+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:17:57.921+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-02-14 10:00:00+00:00, run_after=2026-02-15 10:00:00+00:00
 [2026-02-14T17:17:57.937+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.200 seconds
+[2026-02-14T17:18:28.189+0000] {processor.py:186} INFO - Started process (PID=782) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:18:28.190+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:18:28.192+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:18:28.191+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:18:28.349+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:18:28.353+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:18:28.364+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:18:28.364+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:18:28.378+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:18:28.378+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-02-14 10:00:00+00:00, run_after=2026-02-15 10:00:00+00:00
+[2026-02-14T17:18:28.394+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.208 seconds
+[2026-02-14T17:18:58.650+0000] {processor.py:186} INFO - Started process (PID=788) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:18:58.652+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:18:58.653+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:18:58.653+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:18:58.727+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:18:58.836+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:18:58.847+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:18:58.847+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:18:58.860+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:18:58.859+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-02-14 10:00:00+00:00, run_after=2026-02-15 10:00:00+00:00
+[2026-02-14T17:18:58.875+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.228 seconds
+[2026-02-14T17:19:29.119+0000] {processor.py:186} INFO - Started process (PID=794) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:19:29.119+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:19:29.120+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:19:29.120+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:19:29.271+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:19:29.274+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:19:29.285+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:19:29.285+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:19:29.299+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:19:29.298+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-02-14 10:00:00+00:00, run_after=2026-02-15 10:00:00+00:00
+[2026-02-14T17:19:29.314+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.198 seconds
+[2026-02-14T17:19:59.563+0000] {processor.py:186} INFO - Started process (PID=800) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:19:59.564+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:19:59.565+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:19:59.565+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:19:59.741+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:19:59.744+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:19:59.756+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:19:59.756+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:19:59.769+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:19:59.769+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-02-14 10:00:00+00:00, run_after=2026-02-15 10:00:00+00:00
+[2026-02-14T17:19:59.784+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.224 seconds
+[2026-02-14T17:20:30.049+0000] {processor.py:186} INFO - Started process (PID=806) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:20:30.049+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:20:30.051+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:20:30.050+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:20:30.270+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:20:30.275+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:20:30.290+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:20:30.290+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:20:30.307+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:20:30.307+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-02-14 10:00:00+00:00, run_after=2026-02-15 10:00:00+00:00
+[2026-02-14T17:20:30.321+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.276 seconds
+[2026-02-14T17:21:00.612+0000] {processor.py:186} INFO - Started process (PID=812) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:21:00.613+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:21:00.614+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:21:00.614+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:21:00.777+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:21:00.781+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:21:00.792+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:21:00.792+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:21:00.806+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:21:00.806+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-02-14 10:00:00+00:00, run_after=2026-02-15 10:00:00+00:00
+[2026-02-14T17:21:00.822+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.214 seconds
+[2026-02-14T17:21:31.076+0000] {processor.py:186} INFO - Started process (PID=818) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:21:31.077+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:21:31.078+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:21:31.078+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:21:31.231+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:21:31.234+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:21:31.245+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:21:31.245+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:21:31.258+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:21:31.258+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-02-14 10:00:00+00:00, run_after=2026-02-15 10:00:00+00:00
+[2026-02-14T17:21:31.273+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.201 seconds
+[2026-02-14T17:22:01.521+0000] {processor.py:186} INFO - Started process (PID=824) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:22:01.521+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:22:01.523+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:22:01.522+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:22:01.673+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:22:01.676+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:22:01.687+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:22:01.687+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:22:01.700+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:22:01.699+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-02-14 10:00:00+00:00, run_after=2026-02-15 10:00:00+00:00
+[2026-02-14T17:22:01.714+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.197 seconds
+[2026-02-14T17:22:31.966+0000] {processor.py:186} INFO - Started process (PID=830) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:22:31.966+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:22:31.967+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:22:31.967+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:22:32.131+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:22:32.134+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:22:32.146+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:22:32.146+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:22:32.158+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:22:32.158+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-02-14 10:00:00+00:00, run_after=2026-02-15 10:00:00+00:00
+[2026-02-14T17:22:32.173+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.211 seconds
+[2026-02-14T17:23:02.416+0000] {processor.py:186} INFO - Started process (PID=836) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:23:02.416+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:23:02.418+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:23:02.418+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:23:02.599+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:23:02.602+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:23:02.614+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:23:02.614+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:23:02.632+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:23:02.632+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-02-14 10:00:00+00:00, run_after=2026-02-15 10:00:00+00:00
+[2026-02-14T17:23:02.652+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.241 seconds
+[2026-02-14T17:23:32.892+0000] {processor.py:186} INFO - Started process (PID=842) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:23:32.893+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:23:32.894+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:23:32.894+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:23:33.054+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:23:33.058+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:23:33.068+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:23:33.068+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:23:33.081+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:23:33.081+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-02-14 10:00:00+00:00, run_after=2026-02-15 10:00:00+00:00
+[2026-02-14T17:23:33.096+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.207 seconds
+[2026-02-14T17:24:03.349+0000] {processor.py:186} INFO - Started process (PID=848) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:24:03.349+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:24:03.351+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:24:03.350+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:24:03.520+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:24:03.523+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:24:03.534+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:24:03.534+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:24:03.547+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:24:03.546+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-02-14 10:00:00+00:00, run_after=2026-02-15 10:00:00+00:00
+[2026-02-14T17:24:03.563+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.218 seconds
+[2026-02-14T17:27:38.822+0000] {processor.py:186} INFO - Started process (PID=57) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:27:38.822+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:27:38.824+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:27:38.823+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:27:38.945+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:27:38.950+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:27:39.021+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:27:39.021+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:download_iot
+[2026-02-14T17:27:39.027+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:27:39.027+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:download_iot
+[2026-02-14T17:27:39.031+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:27:39.031+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:download_iot
+[2026-02-14T17:27:39.036+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:27:39.036+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:download_iot
+[2026-02-14T17:27:39.040+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:27:39.040+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:download_iot
+[2026-02-14T17:27:39.044+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:27:39.044+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:download_iot
+[2026-02-14T17:27:39.048+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:27:39.048+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:download_iot
+[2026-02-14T17:27:39.049+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:27:39.048+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:27:39.167+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:27:39.166+0000] {dag.py:3262} INFO - Creating ORM DAG for download_iot
+[2026-02-14T17:27:39.176+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:27:39.175+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-01-30 10:00:00+00:00, run_after=2026-01-31 10:00:00+00:00
+[2026-02-14T17:27:39.188+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.370 seconds
+[2026-02-14T17:28:09.966+0000] {processor.py:186} INFO - Started process (PID=62) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:28:09.968+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:28:09.969+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:28:09.969+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:28:10.044+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:28:10.048+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:28:10.062+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:28:10.061+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:28:10.074+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:28:10.074+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-01-30 10:00:00+00:00, run_after=2026-01-31 10:00:00+00:00
+[2026-02-14T17:28:10.091+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.128 seconds
+[2026-02-14T17:28:40.418+0000] {processor.py:186} INFO - Started process (PID=68) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:28:40.419+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:28:40.420+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:28:40.420+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:28:40.494+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:28:40.498+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:28:40.512+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:28:40.511+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:28:40.525+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:28:40.525+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-01-30 10:00:00+00:00, run_after=2026-01-31 10:00:00+00:00
+[2026-02-14T17:28:40.541+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.126 seconds
+[2026-02-14T17:29:10.872+0000] {processor.py:186} INFO - Started process (PID=74) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:29:10.874+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:29:10.875+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:29:10.875+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:29:10.948+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:29:10.952+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:29:10.964+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:29:10.964+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:29:10.980+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:29:10.980+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-01-30 10:00:00+00:00, run_after=2026-01-31 10:00:00+00:00
+[2026-02-14T17:29:10.996+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.128 seconds

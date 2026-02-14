@@ -25,4 +25,11 @@ CREATE TABLE IF NOT EXISTS temp_monitoring.temperature_readings (
     FOREIGN KEY (status_id) REFERENCES temp_monitoring.status(status_id)
 );
 
+CREATE TABLE IF NOT EXISTS temp_monitoring.raw_data (
+	id SERIAL PRIMARY KEY,
+	room_id TEXT,
+	noted_date TIMESTAMPTZ,
+	temp FLOAT,
+	out_in TEXT
 
+);
