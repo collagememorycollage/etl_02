@@ -81,7 +81,7 @@ DAG'и имеют следующую структуру:
 2) parse_iot
 При помощи данного DAG происходит проверка, что файл скачан. После происходит очистка данных, сортировка и вывод требуемых значений.
 
-[img-2]
+![2_dag](https://github.com/collagememorycollage/etl_02/raw/main/imgs/2.jpg)
 
 3) load_postgres
 

@@ -2420,3 +2420,10 @@ airflow.exceptions.AirflowException: Invalid arguments were passed to SQLExecute
 [2026-02-14T17:17:26.304+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:17:26.304+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2026-02-14T17:17:26.311+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:17:26.311+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
 [2026-02-14T17:17:26.322+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.049 seconds
+[2026-02-14T17:17:56.730+0000] {processor.py:186} INFO - Started process (PID=774) to work on /opt/airflow/dags/123.py
+[2026-02-14T17:17:56.730+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-14T17:17:56.731+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:17:56.731+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-14T17:17:56.735+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-14T17:17:56.748+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:17:56.748+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:17:56.756+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:17:56.756+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-14T17:17:56.766+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.040 seconds
