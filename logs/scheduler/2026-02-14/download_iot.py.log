@@ -3025,3 +3025,16 @@
 [2026-02-14T17:16:56.837+0000] {processor.py:186} INFO - Started process (PID=764) to work on /opt/airflow/dags/download_iot.py
 [2026-02-14T17:16:56.837+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
 [2026-02-14T17:16:56.838+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:16:56.838+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:16:57.006+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:16:57.009+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:16:57.020+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:16:57.020+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:16:57.032+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:16:57.032+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-02-14 10:00:00+00:00, run_after=2026-02-15 10:00:00+00:00
+[2026-02-14T17:16:57.048+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.215 seconds
+[2026-02-14T17:17:27.288+0000] {processor.py:186} INFO - Started process (PID=770) to work on /opt/airflow/dags/download_iot.py
+[2026-02-14T17:17:27.289+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/download_iot.py for tasks to queue
+[2026-02-14T17:17:27.291+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:17:27.291+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:17:27.449+0000] {logging_mixin.py:190} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/airflow/.config/kaggle/kaggle.json'
+[2026-02-14T17:17:27.452+0000] {processor.py:925} INFO - DAG(s) 'download_iot' retrieved from /opt/airflow/dags/download_iot.py
+[2026-02-14T17:17:27.465+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:17:27.465+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-14T17:17:27.479+0000] {logging_mixin.py:190} INFO - [2026-02-14T17:17:27.479+0000] {dag.py:4180} INFO - Setting next_dagrun for download_iot to 2026-02-14 10:00:00+00:00, run_after=2026-02-15 10:00:00+00:00
+[2026-02-14T17:17:27.493+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/download_iot.py took 0.209 seconds

@@ -76,7 +76,7 @@ DAG'и имеют следующую структуру:
 1) download_iot
 При помощи данного DAG происходит загрузка нашего дата-сета, посредством взаимодействия с kaggle-API.
 
-![1_dag](https://github.com/collagememorycollage/etl_02/raw/main/imgs/1.png)
+![1_dag](https://github.com/collagememorycollage/etl_02/raw/main/imgs/1.jpg)
 
 2) parse_iot
 При помощи данного DAG происходит проверка, что файл скачан. После происходит очистка данных, сортировка и вывод требуемых значений.
