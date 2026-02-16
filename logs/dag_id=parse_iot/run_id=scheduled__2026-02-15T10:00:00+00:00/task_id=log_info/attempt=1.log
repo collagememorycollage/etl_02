@@ -35,3 +35,77 @@
 [2026-02-16T14:50:00.183+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
 [2026-02-16T14:50:00.193+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
 [2026-02-16T14:50:00.193+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-16T15:19:57.678+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-16T15:19:57.697+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.log_info scheduled__2026-02-15T10:00:00+00:00 [queued]>
+[2026-02-16T15:19:57.703+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.log_info scheduled__2026-02-15T10:00:00+00:00 [queued]>
+[2026-02-16T15:19:57.703+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-16T15:19:57.710+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): log_info> on 2026-02-15 10:00:00+00:00
+[2026-02-16T15:19:57.715+0000] {standard_task_runner.py:72} INFO - Started process 811 to run task
+[2026-02-16T15:19:57.716+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'log_info', 'scheduled__2026-02-15T10:00:00+00:00', '--job-id', '186', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmpuojyk_zs']
+[2026-02-16T15:19:57.718+0000] {standard_task_runner.py:105} INFO - Job 186: Subtask log_info
+[2026-02-16T15:19:57.726+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-16T15:19:57.746+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.log_info scheduled__2026-02-15T10:00:00+00:00 [running]> on host fbd3e38838e9
+[2026-02-16T15:19:57.746+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-16T15:19:57.791+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='log_info' AIRFLOW_CTX_EXECUTION_DATE='2026-02-15T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-15T10:00:00+00:00'
+[2026-02-16T15:19:57.792+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-16T15:19:57.858+0000] {parse_iot.py:93} INFO - 5 САМЫX ТЕПЛЫX ДНЕЙ
+[2026-02-16T15:19:57.867+0000] {logging_mixin.py:190} INFO -                    id  room_id/id           noted_date  temp out/in
+52556  36405_139a524d  Room Admin  2018-09-30 00:00:00    51    Out
+52562  36382_f6ec793e  Room Admin  2018-09-30 00:00:00    51    Out
+52690  35883_fd412553  Room Admin  2018-09-30 00:00:00    50    Out
+53055  34878_739e9bd2  Room Admin  2018-09-29 00:00:00    50    Out
+52743  35689_d0cc0553  Room Admin  2018-09-30 00:00:00    50    Out
+[2026-02-16T15:19:57.868+0000] {parse_iot.py:96} INFO - 5 САМЫX ХОЛОДНЫХ ДНЕЙ
+[2026-02-16T15:19:57.876+0000] {logging_mixin.py:190} INFO -                    id  room_id/id           noted_date  temp out/in
+5759  177074_72ce2c39  Room Admin  2018-12-03 00:00:00    21     In
+5758  177075_1afebd80  Room Admin  2018-12-03 00:00:00    21     In
+5751  177085_72929c6f  Room Admin  2018-12-03 00:00:00    22     In
+5750  177086_0a61c668  Room Admin  2018-12-03 00:00:00    22     In
+5757  177077_7002033c  Room Admin  2018-12-03 00:00:00    22     In
+[2026-02-16T15:19:57.878+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-02-16T15:19:57.886+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-16T15:19:57.886+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=parse_iot, task_id=log_info, run_id=scheduled__2026-02-15T10:00:00+00:00, execution_date=20260215T100000, start_date=20260216T151957, end_date=20260216T151957
+[2026-02-16T15:19:57.928+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-16T15:19:57.943+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-16T15:19:57.945+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-16T15:47:43.630+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-16T15:47:43.647+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: parse_iot.log_info scheduled__2026-02-15T10:00:00+00:00 [queued]>
+[2026-02-16T15:47:43.654+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: parse_iot.log_info scheduled__2026-02-15T10:00:00+00:00 [queued]>
+[2026-02-16T15:47:43.654+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-16T15:47:43.661+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): log_info> on 2026-02-15 10:00:00+00:00
+[2026-02-16T15:47:43.666+0000] {standard_task_runner.py:72} INFO - Started process 851 to run task
+[2026-02-16T15:47:43.668+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'parse_iot', 'log_info', 'scheduled__2026-02-15T10:00:00+00:00', '--job-id', '196', '--raw', '--subdir', 'DAGS_FOLDER/parse_iot.py', '--cfg-path', '/tmp/tmp781h_g_9']
+[2026-02-16T15:47:43.670+0000] {standard_task_runner.py:105} INFO - Job 196: Subtask log_info
+[2026-02-16T15:47:43.678+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-16T15:47:43.700+0000] {task_command.py:467} INFO - Running <TaskInstance: parse_iot.log_info scheduled__2026-02-15T10:00:00+00:00 [running]> on host 6ef9a94e694d
+[2026-02-16T15:47:43.700+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-16T15:47:43.750+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='parse_iot' AIRFLOW_CTX_TASK_ID='log_info' AIRFLOW_CTX_EXECUTION_DATE='2026-02-15T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-15T10:00:00+00:00'
+[2026-02-16T15:47:43.750+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-16T15:47:43.813+0000] {parse_iot.py:93} INFO - 5 САМЫX ТЕПЛЫX ДНЕЙ
+[2026-02-16T15:47:43.822+0000] {logging_mixin.py:190} INFO -                    id  room_id/id           noted_date  temp out/in
+52556  36405_139a524d  Room Admin  2018-09-30 00:00:00    51    Out
+52562  36382_f6ec793e  Room Admin  2018-09-30 00:00:00    51    Out
+52690  35883_fd412553  Room Admin  2018-09-30 00:00:00    50    Out
+53055  34878_739e9bd2  Room Admin  2018-09-29 00:00:00    50    Out
+52743  35689_d0cc0553  Room Admin  2018-09-30 00:00:00    50    Out
+[2026-02-16T15:47:43.823+0000] {parse_iot.py:96} INFO - 5 САМЫX ХОЛОДНЫХ ДНЕЙ
+[2026-02-16T15:47:43.830+0000] {logging_mixin.py:190} INFO -                    id  room_id/id           noted_date  temp out/in
+5759  177074_72ce2c39  Room Admin  2018-12-03 00:00:00    21     In
+5758  177075_1afebd80  Room Admin  2018-12-03 00:00:00    21     In
+5751  177085_72929c6f  Room Admin  2018-12-03 00:00:00    22     In
+5750  177086_0a61c668  Room Admin  2018-12-03 00:00:00    22     In
+5757  177077_7002033c  Room Admin  2018-12-03 00:00:00    22     In
+[2026-02-16T15:47:43.832+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-02-16T15:47:43.838+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-16T15:47:43.838+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=parse_iot, task_id=log_info, run_id=scheduled__2026-02-15T10:00:00+00:00, execution_date=20260215T100000, start_date=20260216T154743, end_date=20260216T154743
+[2026-02-16T15:47:43.881+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-16T15:47:43.890+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-16T15:47:43.891+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -26,12 +26,11 @@ CREATE TABLE IF NOT EXISTS temp_monitoring.temperature_readings (
 );
 
 CREATE TABLE IF NOT EXISTS temp_monitoring.raw_data (
-	id SERIAL PRIMARY KEY,
-	room_id/id TEXT,
-	noted_date TIMESTAMPTZ,
-	temp FLOAT,
-	out/in TEXT
-
+    id SERIAL PRIMARY KEY,
+    "room_id/id" TEXT,
+    noted_date TIMESTAMPTZ,
+    temp FLOAT,
+    "out/in" TEXT
 );
 
 

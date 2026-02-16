@@ -89,16 +89,27 @@ DAG'и имеют следующую структуру:
 
 
 3) load_postgres
-
+Данный DAG производит полную загрузку за счет параметра(if_exists='replace'):
+df.to_sql(table_name, hook.get_sqlalchemy_engine(), if_exists='replace', index=False)
 
 ![3_dag](https://github.com/collagememorycollage/etl_02/raw/main/imgs/3.jpg)
 
 
 Также был создан connection для работы с postrgesql. Можно проверить доступ зайдя на webserver и выполнить комманду для подуключения:
 ```
-psql -U postgres -h etl_02-postgres_storage_db-1 -d postgres -p 5400 (пароль postgres)
+psql -U postgres -h etl_02-postgres_storage_db-1 -d postgres -p 5432 (пароль postgres)
 
 ```
-![4_dag](https://github.com/collagememorycollage/etl_02/raw/main/imgs/4.jpg)
 
+#### Настройка connection
+Admin -> Connection
+```
+Connection Id: postgres-db
+Connection Type: Postgres
+Host: etl_02-postgres-storage-db-1
+Database: postgres
+Login: postgres
+Password: postgres
+Port: 5432
+```
 

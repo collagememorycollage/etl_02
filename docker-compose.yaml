@@ -1,4 +1,3 @@
-
 x-airflow-common: &airflow-common
   build:
     context: ./airflow_dockerfile
@@ -34,7 +33,6 @@ x-airflow-common: &airflow-common
     - all_in_one
 
 services:
-  # База данных самого Airflow
   postgres:
     image: postgres:15
     environment:
@@ -50,14 +48,13 @@ services:
     networks:
       - all_in_one
 
-  # Ваше хранилище (куда пишет DAG)
-  postgres_storage_db:
+  postgres-storage-db:
     image: postgres:15
     environment:
       POSTGRES_USER: ${POSTGRES_STORAGE_USER}
       POSTGRES_PASSWORD: ${POSTGRES_STORAGE_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_STORAGE_DB} # Исправлено с POSTGRES_BD
-    command: ["postgres", "-p", "5400", "-c", "wal_level=logical"] # Принудительно порт 5400
+      POSTGRES_DB: ${POSTGRES_STORAGE_DB} 
+    command: ["postgres", "-c", "wal_level=logical"] 
     ports:
       - "5400:5432"
     restart: always
@@ -65,7 +62,7 @@ services:
       - ./postgres-storage-db-volume:/var/lib/postgresql/data
       - ./postgres_dockerfile/create_db.sql:/docker-entrypoint-initdb.d/init.sql
     healthcheck:
-      test: [ "CMD", "pg_isready", "-U", "${POSTGRES_STORAGE_USER}", "-p", "5400" ]
+      test: [ "CMD", "pg_isready", "-U", "${POSTGRES_STORAGE_USER}" ]
       interval: 5s
       retries: 5
     networks:
@@ -110,14 +107,6 @@ services:
           airflow db migrate
           airflow users create --username ${_AIRFLOW_WWW_USER_USERNAME} --password ${_AIRFLOW_WWW_USER_PASSWORD} --firstname Admin --lastname Admin --role Admin --email admin@example.com
           
-          # Настройка подключения к вашему хранилищу
-          airflow connections add 'my_postgres' \
-            --conn-type 'postgres' \
-            --conn-host 'postgres_storage_db' \
-            --conn-login "${POSTGRES_STORAGE_USER}" \
-            --conn-password "${POSTGRES_STORAGE_PASSWORD}" \
-            --conn-schema "${POSTGRES_STORAGE_DB}" \
-            --conn-port 5400
 
 networks:
   all_in_one:

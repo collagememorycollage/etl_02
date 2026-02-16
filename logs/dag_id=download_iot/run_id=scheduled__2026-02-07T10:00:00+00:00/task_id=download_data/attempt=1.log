@@ -148,3 +148,53 @@
 [2026-02-16T14:44:47.620+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
 [2026-02-16T14:44:47.634+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
 [2026-02-16T14:44:47.635+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-16T15:14:34.426+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-16T15:14:34.440+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: download_iot.download_data scheduled__2026-02-07T10:00:00+00:00 [queued]>
+[2026-02-16T15:14:34.445+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: download_iot.download_data scheduled__2026-02-07T10:00:00+00:00 [queued]>
+[2026-02-16T15:14:34.445+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-16T15:14:34.454+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): download_data> on 2026-02-07 10:00:00+00:00
+[2026-02-16T15:14:34.458+0000] {standard_task_runner.py:72} INFO - Started process 146 to run task
+[2026-02-16T15:14:34.460+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'download_iot', 'download_data', 'scheduled__2026-02-07T10:00:00+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/download_iot.py', '--cfg-path', '/tmp/tmpdhpacpei']
+[2026-02-16T15:14:34.462+0000] {standard_task_runner.py:105} INFO - Job 20: Subtask download_data
+[2026-02-16T15:14:34.471+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-16T15:14:34.492+0000] {task_command.py:467} INFO - Running <TaskInstance: download_iot.download_data scheduled__2026-02-07T10:00:00+00:00 [running]> on host fbd3e38838e9
+[2026-02-16T15:14:34.493+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-16T15:14:34.544+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='download_iot' AIRFLOW_CTX_TASK_ID='download_data' AIRFLOW_CTX_EXECUTION_DATE='2026-02-07T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-07T10:00:00+00:00'
+[2026-02-16T15:14:34.544+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-16T15:14:34.557+0000] {logging_mixin.py:190} INFO - Dataset URL: https://www.kaggle.com/datasets/atulanandjha/temperature-readings-iot-devices
+[2026-02-16T15:14:35.752+0000] {download_iot.py:66} INFO - Данные успешно загружены с Kaggle!
+[2026-02-16T15:14:35.753+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-02-16T15:14:35.759+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-16T15:14:35.760+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=download_iot, task_id=download_data, run_id=scheduled__2026-02-07T10:00:00+00:00, execution_date=20260207T100000, start_date=20260216T151434, end_date=20260216T151435
+[2026-02-16T15:14:35.835+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-16T15:14:35.849+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-16T15:14:35.850+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-16T15:42:35.194+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-16T15:42:35.207+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: download_iot.download_data scheduled__2026-02-07T10:00:00+00:00 [queued]>
+[2026-02-16T15:42:35.213+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: download_iot.download_data scheduled__2026-02-07T10:00:00+00:00 [queued]>
+[2026-02-16T15:42:35.213+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-16T15:42:35.221+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): download_data> on 2026-02-07 10:00:00+00:00
+[2026-02-16T15:42:35.225+0000] {standard_task_runner.py:72} INFO - Started process 146 to run task
+[2026-02-16T15:42:35.227+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'download_iot', 'download_data', 'scheduled__2026-02-07T10:00:00+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/download_iot.py', '--cfg-path', '/tmp/tmp4spbxt73']
+[2026-02-16T15:42:35.228+0000] {standard_task_runner.py:105} INFO - Job 20: Subtask download_data
+[2026-02-16T15:42:35.237+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-16T15:42:35.258+0000] {task_command.py:467} INFO - Running <TaskInstance: download_iot.download_data scheduled__2026-02-07T10:00:00+00:00 [running]> on host 6ef9a94e694d
+[2026-02-16T15:42:35.259+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-16T15:42:35.306+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='download_iot' AIRFLOW_CTX_TASK_ID='download_data' AIRFLOW_CTX_EXECUTION_DATE='2026-02-07T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-07T10:00:00+00:00'
+[2026-02-16T15:42:35.307+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-16T15:42:35.315+0000] {logging_mixin.py:190} INFO - Dataset URL: https://www.kaggle.com/datasets/atulanandjha/temperature-readings-iot-devices
+[2026-02-16T15:42:36.501+0000] {download_iot.py:66} INFO - Данные успешно загружены с Kaggle!
+[2026-02-16T15:42:36.502+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-02-16T15:42:36.510+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-16T15:42:36.511+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=download_iot, task_id=download_data, run_id=scheduled__2026-02-07T10:00:00+00:00, execution_date=20260207T100000, start_date=20260216T154235, end_date=20260216T154236
+[2026-02-16T15:42:36.682+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-16T15:42:36.695+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-16T15:42:36.696+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
