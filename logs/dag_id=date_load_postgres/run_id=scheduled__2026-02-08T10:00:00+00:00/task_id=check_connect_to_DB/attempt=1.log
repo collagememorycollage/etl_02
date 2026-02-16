@@ -1,0 +1,84 @@
+[2026-02-16T16:56:52.658+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-16T16:56:52.670+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: date_load_postgres.check_connect_to_DB scheduled__2026-02-08T10:00:00+00:00 [queued]>
+[2026-02-16T16:56:52.675+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: date_load_postgres.check_connect_to_DB scheduled__2026-02-08T10:00:00+00:00 [queued]>
+[2026-02-16T16:56:52.675+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-16T16:56:52.682+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonSensor): check_connect_to_DB> on 2026-02-08 10:00:00+00:00
+[2026-02-16T16:56:52.687+0000] {standard_task_runner.py:72} INFO - Started process 1196 to run task
+[2026-02-16T16:56:52.689+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'date_load_postgres', 'check_connect_to_DB', 'scheduled__2026-02-08T10:00:00+00:00', '--job-id', '282', '--raw', '--subdir', 'DAGS_FOLDER/date_load_postrges.py', '--cfg-path', '/tmp/tmpfmshpz68']
+[2026-02-16T16:56:52.690+0000] {standard_task_runner.py:105} INFO - Job 282: Subtask check_connect_to_DB
+[2026-02-16T16:56:52.698+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-16T16:56:52.720+0000] {task_command.py:467} INFO - Running <TaskInstance: date_load_postgres.check_connect_to_DB scheduled__2026-02-08T10:00:00+00:00 [running]> on host 6ef9a94e694d
+[2026-02-16T16:56:52.720+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-16T16:56:52.768+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='date_load_postgres' AIRFLOW_CTX_TASK_ID='check_connect_to_DB' AIRFLOW_CTX_EXECUTION_DATE='2026-02-08T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-08T10:00:00+00:00'
+[2026-02-16T16:56:52.769+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-16T16:56:52.776+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7507ea9f1280>
+[2026-02-16T16:56:52.785+0000] {base.py:84} INFO - Retrieving connection '***-db'
+[2026-02-16T16:56:52.789+0000] {sql.py:511} INFO - Running statement: select 1, parameters: None
+[2026-02-16T16:56:52.789+0000] {sql.py:520} INFO - Rows affected: 1
+[2026-02-16T16:56:52.789+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/providers/common/sql/hooks/sql.py:470: DeprecationWarning: Import of fetch_one_handler from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+  result = self._make_common_data_structure(handler(cur))
+
+[2026-02-16T16:56:52.790+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/providers/common/sql/hooks/sql.py:471: DeprecationWarning: Import of return_single_query_results from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+  if return_single_query_results(sql, return_last, split_statements):
+
+[2026-02-16T16:56:52.790+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/providers/common/sql/hooks/sql.py:486: DeprecationWarning: Import of return_single_query_results from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+  if return_single_query_results(sql, return_last, split_statements):
+
+[2026-02-16T16:56:52.790+0000] {logging_mixin.py:190} INFO - Подключение удалось Connection successfully tested
+[2026-02-16T16:56:52.790+0000] {base.py:339} INFO - Success criteria met. Exiting.
+[2026-02-16T16:56:52.796+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-16T16:56:52.797+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=date_load_***, task_id=check_connect_to_DB, run_id=scheduled__2026-02-08T10:00:00+00:00, execution_date=20260208T100000, start_date=20260216T165652, end_date=20260216T165652
+[2026-02-16T16:56:52.821+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-16T16:56:52.838+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-16T16:56:52.839+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-16T18:13:10.039+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-16T18:13:10.052+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: date_load_postgres.check_connect_to_DB scheduled__2026-02-08T10:00:00+00:00 [queued]>
+[2026-02-16T18:13:10.058+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: date_load_postgres.check_connect_to_DB scheduled__2026-02-08T10:00:00+00:00 [queued]>
+[2026-02-16T18:13:10.058+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-16T18:13:10.064+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonSensor): check_connect_to_DB> on 2026-02-08 10:00:00+00:00
+[2026-02-16T18:13:10.069+0000] {standard_task_runner.py:72} INFO - Started process 605 to run task
+[2026-02-16T18:13:10.071+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'date_load_postgres', 'check_connect_to_DB', 'scheduled__2026-02-08T10:00:00+00:00', '--job-id', '122', '--raw', '--subdir', 'DAGS_FOLDER/date_load_postrges.py', '--cfg-path', '/tmp/tmp5ih688rd']
+[2026-02-16T18:13:10.073+0000] {standard_task_runner.py:105} INFO - Job 122: Subtask check_connect_to_DB
+[2026-02-16T18:13:10.082+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-16T18:13:10.104+0000] {task_command.py:467} INFO - Running <TaskInstance: date_load_postgres.check_connect_to_DB scheduled__2026-02-08T10:00:00+00:00 [running]> on host 80c391c4cc85
+[2026-02-16T18:13:10.104+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-16T18:13:10.154+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='date_load_postgres' AIRFLOW_CTX_TASK_ID='check_connect_to_DB' AIRFLOW_CTX_EXECUTION_DATE='2026-02-08T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-08T10:00:00+00:00'
+[2026-02-16T18:13:10.155+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-16T18:13:10.162+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7ae693dfbe50>
+[2026-02-16T18:13:10.169+0000] {logging_mixin.py:190} INFO - Подключение не удалось The conn_id `postgres-db` isn't defined
+[2026-02-16T18:14:10.229+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7ae693dfbe50>
+[2026-02-16T18:14:10.235+0000] {logging_mixin.py:190} INFO - Подключение не удалось The conn_id `postgres-db` isn't defined
+[2026-02-16T18:15:10.294+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_DB at 0x7ae693dfbe50>
+[2026-02-16T18:15:10.302+0000] {base.py:84} INFO - Retrieving connection '***-db'
+[2026-02-16T18:15:10.305+0000] {sql.py:511} INFO - Running statement: select 1, parameters: None
+[2026-02-16T18:15:10.306+0000] {sql.py:520} INFO - Rows affected: 1
+[2026-02-16T18:15:10.306+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/providers/common/sql/hooks/sql.py:470: DeprecationWarning: Import of fetch_one_handler from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+  result = self._make_common_data_structure(handler(cur))
+
+[2026-02-16T18:15:10.306+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/providers/common/sql/hooks/sql.py:471: DeprecationWarning: Import of return_single_query_results from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+  if return_single_query_results(sql, return_last, split_statements):
+
+[2026-02-16T18:15:10.307+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/providers/common/sql/hooks/sql.py:486: DeprecationWarning: Import of return_single_query_results from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+  if return_single_query_results(sql, return_last, split_statements):
+
+[2026-02-16T18:15:10.307+0000] {logging_mixin.py:190} INFO - Подключение удалось Connection successfully tested
+[2026-02-16T18:15:10.307+0000] {base.py:339} INFO - Success criteria met. Exiting.
+[2026-02-16T18:15:10.313+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-16T18:15:10.314+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=date_load_***, task_id=check_connect_to_DB, run_id=scheduled__2026-02-08T10:00:00+00:00, execution_date=20260208T100000, start_date=20260216T181310, end_date=20260216T181510
+[2026-02-16T18:15:10.366+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-16T18:15:10.382+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-02-16T18:15:10.383+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

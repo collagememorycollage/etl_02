@@ -1,0 +1,23 @@
+[2026-02-16T17:02:16.185+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-16T17:02:16.197+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: date_load_postgres.parse_data scheduled__2026-02-10T10:00:00+00:00 [queued]>
+[2026-02-16T17:02:16.202+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: date_load_postgres.parse_data scheduled__2026-02-10T10:00:00+00:00 [queued]>
+[2026-02-16T17:02:16.202+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 4
+[2026-02-16T17:02:16.209+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): parse_data> on 2026-02-10 10:00:00+00:00
+[2026-02-16T17:02:16.214+0000] {standard_task_runner.py:72} INFO - Started process 1443 to run task
+[2026-02-16T17:02:16.216+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'date_load_postgres', 'parse_data', 'scheduled__2026-02-10T10:00:00+00:00', '--job-id', '343', '--raw', '--subdir', 'DAGS_FOLDER/date_load_postrges.py', '--cfg-path', '/tmp/tmp6dw76x65']
+[2026-02-16T17:02:16.217+0000] {standard_task_runner.py:105} INFO - Job 343: Subtask parse_data
+[2026-02-16T17:02:16.226+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-16T17:02:16.247+0000] {task_command.py:467} INFO - Running <TaskInstance: date_load_postgres.parse_data scheduled__2026-02-10T10:00:00+00:00 [running]> on host 6ef9a94e694d
+[2026-02-16T17:02:16.248+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-16T17:02:16.293+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='date_load_postgres' AIRFLOW_CTX_TASK_ID='parse_data' AIRFLOW_CTX_EXECUTION_DATE='2026-02-10T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-10T10:00:00+00:00'
+[2026-02-16T17:02:16.294+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-16T17:02:24.972+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-02-16T17:02:24.978+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-16T17:02:24.978+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=date_load_postgres, task_id=parse_data, run_id=scheduled__2026-02-10T10:00:00+00:00, execution_date=20260210T100000, start_date=20260216T170216, end_date=20260216T170224
+[2026-02-16T17:02:25.033+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-16T17:02:25.042+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-16T17:02:25.043+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

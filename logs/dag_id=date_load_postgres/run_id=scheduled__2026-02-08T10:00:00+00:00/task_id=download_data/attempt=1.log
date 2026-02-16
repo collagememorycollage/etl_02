@@ -1,0 +1,107 @@
+[2026-02-16T16:54:33.039+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-16T16:54:33.051+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: date_load_postgres.download_data scheduled__2026-02-08T10:00:00+00:00 [queued]>
+[2026-02-16T16:54:33.057+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: date_load_postgres.download_data scheduled__2026-02-08T10:00:00+00:00 [queued]>
+[2026-02-16T16:54:33.057+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-16T16:54:33.064+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): download_data> on 2026-02-08 10:00:00+00:00
+[2026-02-16T16:54:33.069+0000] {standard_task_runner.py:72} INFO - Started process 1051 to run task
+[2026-02-16T16:54:33.071+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'date_load_postgres', 'download_data', 'scheduled__2026-02-08T10:00:00+00:00', '--job-id', '246', '--raw', '--subdir', 'DAGS_FOLDER/date_load_postrges.py', '--cfg-path', '/tmp/tmp0on69v6y']
+[2026-02-16T16:54:33.072+0000] {standard_task_runner.py:105} INFO - Job 246: Subtask download_data
+[2026-02-16T16:54:33.081+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-16T16:54:33.104+0000] {task_command.py:467} INFO - Running <TaskInstance: date_load_postgres.download_data scheduled__2026-02-08T10:00:00+00:00 [running]> on host 6ef9a94e694d
+[2026-02-16T16:54:33.104+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-16T16:54:33.149+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='date_load_postgres' AIRFLOW_CTX_TASK_ID='download_data' AIRFLOW_CTX_EXECUTION_DATE='2026-02-08T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-08T10:00:00+00:00'
+[2026-02-16T16:54:33.149+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-16T16:54:33.156+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/date_load_postrges.py", line 62, in download_data
+    api = KaggleApi()
+NameError: name 'KaggleApi' is not defined
+[2026-02-16T16:54:33.164+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=date_load_postgres, task_id=download_data, run_id=scheduled__2026-02-08T10:00:00+00:00, execution_date=20260208T100000, start_date=20260216T165433, end_date=20260216T165433
+[2026-02-16T16:54:33.183+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-16T16:54:33.184+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 246 for task download_data (name 'KaggleApi' is not defined; 1051)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/date_load_postrges.py", line 62, in download_data
+    api = KaggleApi()
+NameError: name 'KaggleApi' is not defined
+[2026-02-16T16:54:33.203+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2026-02-16T16:54:33.218+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-16T16:54:33.219+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-02-16T17:38:44.723+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-16T17:38:44.735+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: date_load_postgres.download_data scheduled__2026-02-08T10:00:00+00:00 [queued]>
+[2026-02-16T17:38:44.741+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: date_load_postgres.download_data scheduled__2026-02-08T10:00:00+00:00 [queued]>
+[2026-02-16T17:38:44.741+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-02-16T17:38:44.748+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): download_data> on 2026-02-08 10:00:00+00:00
+[2026-02-16T17:38:44.752+0000] {standard_task_runner.py:72} INFO - Started process 120 to run task
+[2026-02-16T17:38:44.754+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'date_load_postgres', 'download_data', 'scheduled__2026-02-08T10:00:00+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/date_load_postrges.py', '--cfg-path', '/tmp/tmptzmxmp6z']
+[2026-02-16T17:38:44.756+0000] {standard_task_runner.py:105} INFO - Job 11: Subtask download_data
+[2026-02-16T17:38:44.765+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-02-16T17:38:44.789+0000] {task_command.py:467} INFO - Running <TaskInstance: date_load_postgres.download_data scheduled__2026-02-08T10:00:00+00:00 [running]> on host 80c391c4cc85
+[2026-02-16T17:38:44.790+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-02-16T17:38:44.835+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='date_load_postgres' AIRFLOW_CTX_TASK_ID='download_data' AIRFLOW_CTX_EXECUTION_DATE='2026-02-08T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-08T10:00:00+00:00'
+[2026-02-16T17:38:44.836+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-02-16T17:38:44.844+0000] {logging_mixin.py:190} INFO - Dataset URL: https://www.kaggle.com/datasets/atulanandjha/temperature-readings-iot-devices
+[2026-02-16T17:38:46.808+0000] {date_load_postrges.py:69} INFO - Данные успешно загружены с Kaggle!
+[2026-02-16T17:38:46.808+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-02-16T17:38:46.814+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-02-16T17:38:46.815+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=date_load_postgres, task_id=download_data, run_id=scheduled__2026-02-08T10:00:00+00:00, execution_date=20260208T100000, start_date=20260216T173844, end_date=20260216T173846
+[2026-02-16T17:38:46.890+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-16T17:38:46.909+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-02-16T17:38:46.910+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

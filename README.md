@@ -133,4 +133,45 @@ postgres=# select * from raw_data ;
  196112_e134aebd | Room Admin | 2018-12-08 00:00:00 |   29 | In
 
 ```
+# Инкрементальная загрузка по дате
+
+Данные для загрузки на определенную дату происходят внутри DAG date_load_postgres. Там происходит отбор данных за определенную дату, после чего происходит загрузка в целевую таблицу в Postgres. 
+
+![6_dag](https://github.com/collagememorycollage/etl_02/raw/main/imgs/6.jpg)
+
+```
+def load_date_csv_to_postgres():
+    # Тут можно было бы передать текущую дату через контекст (**context) <--Тут можно было бы обратиться {execution_date}
+    date = "2018-12-08"
+
+    hook = PostgresHook(postgres_conn_id="postgres-db")
+
+    csv_path = f"/opt/airflow/data/IOT-temp_clean_{date}.csv"   # путь к CSV
+    table_name = "date_raw_data"
+
+    df = pd.read_csv(csv_path)
+
+    df.to_sql(table_name, hook.get_sqlalchemy_engine(), if_exists='append', index=False)
+
+    print(f"Данные успешно загружены в таблицу {table_name}")
+
+```
+
+Загрузка происходит в таблицу date_raw_data 
+
+```
+postgres=# select * from date_raw_data;
+
+       id        | room_id/id |     noted_date      | temp | out/in 
+-----------------+------------+---------------------+------+--------
+ 196134_bd201015 | Room Admin | 2018-12-08 00:00:00 |   29 | In
+ 196131_7bca51bc | Room Admin | 2018-12-08 00:00:00 |   29 | In
+ 196127_522915e3 | Room Admin | 2018-12-08 00:00:00 |   41 | Out
+ 196128_be0919cf | Room Admin | 2018-12-08 00:00:00 |   41 | Out
+ 196126_d30b72fb | Room Admin | 2018-12-08 00:00:00 |   31 | In
+ 196125_b0fa0b41 | Room Admin | 2018-12-08 00:00:00 |   31 | In
+ 196121_01544d45 | Room Admin | 2018-12-08 00:00:00 |   29 | In
+ 196122_f8b80a9f | Room Admin | 2018-12-08 00:00:00 |   29 | In
+
+```
 
