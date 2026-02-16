@@ -54,7 +54,7 @@ def load_csv_to_postgres():
    
     df = pd.read_csv(csv_path)
    
-    df.to_sql(table_name, hook.get_sqlalchemy_engine(), if_exists='append', index=False)
+    df.to_sql(table_name, hook.get_sqlalchemy_engine(), if_exists='replace', index=False)
 
     print(f"Данные успешно загружены в таблицу {table_name}")
 
