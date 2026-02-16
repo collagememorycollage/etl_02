@@ -83,6 +83,11 @@ DAG'и имеют следующую структуру:
 
 ![2_dag](https://github.com/collagememorycollage/etl_02/raw/main/imgs/2.jpg)
 
+Таже внутри таски log_info можно узнать статистику по самым теплым и самым холодным дням
+
+![5_dag](https://github.com/collagememorycollage/etl_02/raw/main/imgs/5.jpg)
+
+
 3) load_postgres
 
 
@@ -95,6 +100,5 @@ psql -U postgres -h etl_02-postgres_storage_db-1 -d postgres -p 5400 (парол
 
 ```
 ![4_dag](https://github.com/collagememorycollage/etl_02/raw/main/imgs/4.jpg)
-
 
 

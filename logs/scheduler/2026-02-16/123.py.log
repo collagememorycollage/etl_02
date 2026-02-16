@@ -1,0 +1,113 @@
+[2026-02-16T14:43:58.928+0000] {processor.py:186} INFO - Started process (PID=82) to work on /opt/airflow/dags/123.py
+[2026-02-16T14:43:58.929+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-16T14:43:58.930+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:43:58.930+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-16T14:43:58.935+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-16T14:43:59.007+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:43:59.006+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:simple_postgres_etl
+[2026-02-16T14:43:59.014+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:43:59.014+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:simple_postgres_etl
+[2026-02-16T14:43:59.018+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:43:59.018+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:simple_postgres_etl
+[2026-02-16T14:43:59.023+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:43:59.023+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:simple_postgres_etl
+[2026-02-16T14:43:59.028+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:43:59.027+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:simple_postgres_etl
+[2026-02-16T14:43:59.032+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:43:59.031+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:simple_postgres_etl
+[2026-02-16T14:43:59.035+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:43:59.035+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:simple_postgres_etl
+[2026-02-16T14:43:59.036+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:43:59.036+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-16T14:43:59.044+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:43:59.043+0000] {dag.py:3262} INFO - Creating ORM DAG for simple_postgres_etl
+[2026-02-16T14:43:59.044+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:43:59.044+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-16T14:43:59.054+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.130 seconds
+[2026-02-16T14:44:29.507+0000] {processor.py:186} INFO - Started process (PID=92) to work on /opt/airflow/dags/123.py
+[2026-02-16T14:44:29.507+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-16T14:44:29.509+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:44:29.508+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-16T14:44:29.514+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-16T14:44:29.529+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:44:29.529+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-16T14:44:29.539+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:44:29.539+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-16T14:44:29.549+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.047 seconds
+[2026-02-16T14:45:00.092+0000] {processor.py:186} INFO - Started process (PID=122) to work on /opt/airflow/dags/123.py
+[2026-02-16T14:45:00.093+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-16T14:45:00.095+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:45:00.094+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-16T14:45:00.099+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-16T14:45:00.113+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:45:00.113+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-16T14:45:00.122+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:45:00.122+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-16T14:45:00.133+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.044 seconds
+[2026-02-16T14:45:30.607+0000] {processor.py:186} INFO - Started process (PID=132) to work on /opt/airflow/dags/123.py
+[2026-02-16T14:45:30.607+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-16T14:45:30.609+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:45:30.608+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-16T14:45:30.614+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-16T14:45:30.630+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:45:30.629+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-16T14:45:30.639+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:45:30.639+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-16T14:45:30.651+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.048 seconds
+[2026-02-16T14:46:01.104+0000] {processor.py:186} INFO - Started process (PID=182) to work on /opt/airflow/dags/123.py
+[2026-02-16T14:46:01.105+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-16T14:46:01.106+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:46:01.106+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-16T14:46:01.111+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-16T14:46:01.126+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:46:01.126+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-16T14:46:01.135+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:46:01.135+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-16T14:46:01.146+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.046 seconds
+[2026-02-16T14:46:31.655+0000] {processor.py:186} INFO - Started process (PID=188) to work on /opt/airflow/dags/123.py
+[2026-02-16T14:46:31.656+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-16T14:46:31.657+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:46:31.657+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-16T14:46:31.662+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-16T14:46:31.676+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:46:31.676+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-16T14:46:31.685+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:46:31.685+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-16T14:46:31.695+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.044 seconds
+[2026-02-16T14:47:02.178+0000] {processor.py:186} INFO - Started process (PID=202) to work on /opt/airflow/dags/123.py
+[2026-02-16T14:47:02.179+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-16T14:47:02.180+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:47:02.180+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-16T14:47:02.185+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-16T14:47:02.199+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:47:02.199+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-16T14:47:02.208+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:47:02.207+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-16T14:47:02.217+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.043 seconds
+[2026-02-16T14:47:32.677+0000] {processor.py:186} INFO - Started process (PID=208) to work on /opt/airflow/dags/123.py
+[2026-02-16T14:47:32.677+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-16T14:47:32.678+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:47:32.678+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-16T14:47:32.683+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-16T14:47:32.697+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:47:32.697+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-16T14:47:32.706+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:47:32.705+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-16T14:47:32.716+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.043 seconds
+[2026-02-16T14:48:03.198+0000] {processor.py:186} INFO - Started process (PID=222) to work on /opt/airflow/dags/123.py
+[2026-02-16T14:48:03.198+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-16T14:48:03.200+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:48:03.199+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-16T14:48:03.205+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-16T14:48:03.218+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:48:03.218+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-16T14:48:03.228+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:48:03.228+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-16T14:48:03.239+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.045 seconds
+[2026-02-16T14:48:33.745+0000] {processor.py:186} INFO - Started process (PID=228) to work on /opt/airflow/dags/123.py
+[2026-02-16T14:48:33.746+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-16T14:48:33.748+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:48:33.747+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-16T14:48:33.753+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-16T14:48:33.770+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:48:33.770+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-16T14:48:33.780+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:48:33.780+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-16T14:48:33.793+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.051 seconds
+[2026-02-16T14:49:04.299+0000] {processor.py:186} INFO - Started process (PID=238) to work on /opt/airflow/dags/123.py
+[2026-02-16T14:49:04.300+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-16T14:49:04.301+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:49:04.301+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-16T14:49:04.306+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-16T14:49:04.319+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:49:04.319+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-16T14:49:04.328+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:49:04.328+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-16T14:49:04.340+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.044 seconds
+[2026-02-16T14:49:34.855+0000] {processor.py:186} INFO - Started process (PID=244) to work on /opt/airflow/dags/123.py
+[2026-02-16T14:49:34.856+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-16T14:49:34.857+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:49:34.857+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-16T14:49:34.863+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-16T14:49:34.877+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:49:34.877+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-16T14:49:34.887+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:49:34.887+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-16T14:49:34.897+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.046 seconds
+[2026-02-16T14:50:05.348+0000] {processor.py:186} INFO - Started process (PID=258) to work on /opt/airflow/dags/123.py
+[2026-02-16T14:50:05.349+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-16T14:50:05.350+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:50:05.350+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-16T14:50:05.355+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-16T14:50:05.368+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:50:05.368+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-16T14:50:05.376+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:50:05.376+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-16T14:50:05.386+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.042 seconds
+[2026-02-16T14:50:35.837+0000] {processor.py:186} INFO - Started process (PID=264) to work on /opt/airflow/dags/123.py
+[2026-02-16T14:50:35.838+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-16T14:50:35.839+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:50:35.839+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-16T14:50:35.844+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-16T14:50:35.857+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:50:35.856+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-16T14:50:35.865+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:50:35.865+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-16T14:50:35.875+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.042 seconds
+[2026-02-16T14:51:06.341+0000] {processor.py:186} INFO - Started process (PID=270) to work on /opt/airflow/dags/123.py
+[2026-02-16T14:51:06.342+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/123.py for tasks to queue
+[2026-02-16T14:51:06.343+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:51:06.343+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/123.py
+[2026-02-16T14:51:06.348+0000] {processor.py:925} INFO - DAG(s) 'simple_postgres_etl' retrieved from /opt/airflow/dags/123.py
+[2026-02-16T14:51:06.362+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:51:06.361+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-16T14:51:06.370+0000] {logging_mixin.py:190} INFO - [2026-02-16T14:51:06.370+0000] {dag.py:4180} INFO - Setting next_dagrun for simple_postgres_etl to None, run_after=None
+[2026-02-16T14:51:06.381+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/123.py took 0.044 seconds
