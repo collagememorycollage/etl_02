@@ -1,0 +1,289 @@
+[2026-02-16T16:09:14.250+0000] {processor.py:186} INFO - Started process (PID=524) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:09:14.251+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:09:14.251+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:09:14.251+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:09:14.253+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:09:14.253+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:09:14.254+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:09:14.270+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.023 seconds
+[2026-02-16T16:09:44.757+0000] {processor.py:186} INFO - Started process (PID=531) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:09:44.758+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:09:44.759+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:09:44.759+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:09:44.760+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:09:44.760+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:09:44.761+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:09:44.772+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.018 seconds
+[2026-02-16T16:10:15.235+0000] {processor.py:186} INFO - Started process (PID=538) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:10:15.240+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:10:15.242+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:10:15.241+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:10:15.243+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:10:15.243+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:10:15.244+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:10:15.254+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.023 seconds
+[2026-02-16T16:10:45.721+0000] {processor.py:186} INFO - Started process (PID=545) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:10:45.721+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:10:45.723+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:10:45.722+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:10:45.725+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:10:45.724+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:10:45.725+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:10:45.736+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.020 seconds
+[2026-02-16T16:11:16.201+0000] {processor.py:186} INFO - Started process (PID=552) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:11:16.207+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:11:16.208+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:11:16.208+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:11:16.210+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:11:16.210+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:11:16.210+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:11:16.222+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.024 seconds
+[2026-02-16T16:11:46.685+0000] {processor.py:186} INFO - Started process (PID=559) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:11:46.685+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:11:46.686+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:11:46.686+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:11:46.688+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:11:46.688+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:11:46.688+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:11:46.699+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.018 seconds
+[2026-02-16T16:12:17.169+0000] {processor.py:186} INFO - Started process (PID=566) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:12:17.175+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:12:17.176+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:12:17.176+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:12:17.178+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:12:17.177+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:12:17.178+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:12:17.189+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.023 seconds
+[2026-02-16T16:12:47.653+0000] {processor.py:186} INFO - Started process (PID=573) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:12:47.659+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:12:47.660+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:12:47.659+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:12:47.661+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:12:47.661+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:12:47.662+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:12:47.673+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.024 seconds
+[2026-02-16T16:13:18.142+0000] {processor.py:186} INFO - Started process (PID=580) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:13:18.143+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:13:18.144+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:13:18.143+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:13:18.145+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:13:18.145+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:13:18.146+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:13:18.157+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.018 seconds
+[2026-02-16T16:13:48.625+0000] {processor.py:186} INFO - Started process (PID=587) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:13:48.631+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:13:48.632+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:13:48.631+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:13:48.634+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:13:48.633+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:13:48.634+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:13:48.645+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.023 seconds
+[2026-02-16T16:14:19.134+0000] {processor.py:186} INFO - Started process (PID=594) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:14:19.134+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:14:19.135+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:14:19.135+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:14:19.138+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:14:19.137+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:14:19.138+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:14:19.151+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.022 seconds
+[2026-02-16T16:14:49.645+0000] {processor.py:186} INFO - Started process (PID=601) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:14:49.651+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:14:49.652+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:14:49.652+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:14:49.654+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:14:49.653+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:14:49.654+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:14:49.665+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.024 seconds
+[2026-02-16T16:15:20.135+0000] {processor.py:186} INFO - Started process (PID=608) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:15:20.135+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:15:20.136+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:15:20.136+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:15:20.138+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:15:20.138+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:15:20.139+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:15:20.150+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.018 seconds
+[2026-02-16T16:15:50.620+0000] {processor.py:186} INFO - Started process (PID=615) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:15:50.626+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:15:50.627+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:15:50.626+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:15:50.628+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:15:50.628+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:15:50.629+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:15:50.640+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.023 seconds
+[2026-02-16T16:16:21.116+0000] {processor.py:186} INFO - Started process (PID=622) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:16:21.117+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:16:21.118+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:16:21.118+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:16:21.120+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:16:21.120+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:16:21.120+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:16:21.131+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.018 seconds
+[2026-02-16T16:16:51.605+0000] {processor.py:186} INFO - Started process (PID=629) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:16:51.606+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:16:51.608+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:16:51.608+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:16:51.610+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:16:51.609+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:16:51.610+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:16:51.621+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.020 seconds
+[2026-02-16T16:17:22.094+0000] {processor.py:186} INFO - Started process (PID=636) to work on /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:17:22.095+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/date_load_postrges.py for tasks to queue
+[2026-02-16T16:17:22.096+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:17:22.096+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:17:22.098+0000] {logging_mixin.py:190} INFO - [2026-02-16T16:17:22.097+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/date_load_postrges.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/date_load_postrges.py", line 70
+    
+    ^
+IndentationError: expected an indented block
+[2026-02-16T16:17:22.098+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/date_load_postrges.py
+[2026-02-16T16:17:22.109+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/date_load_postrges.py took 0.018 seconds
