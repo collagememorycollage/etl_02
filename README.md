@@ -89,6 +89,7 @@ DAG'и имеют следующую структуру:
 
 
 3) load_postgres
+
 Данный DAG производит полную загрузку за счет параметра(if_exists='replace'):
 df.to_sql(table_name, hook.get_sqlalchemy_engine(), if_exists='replace', index=False)
 
